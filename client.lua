@@ -22,3 +22,15 @@ Citizen.CreateThread(function()
     SetAmbientZoneListStatePersistent('AZL_DLC_Hei4_Island_Zones', config.ambient_zone or true, true)
     SetAmbientZoneListStatePersistent('AZL_DLC_Hei4_Island_Disabled_Zones', not config.ambient_zone or false, true)
 end)
+
+Citizen.CreateThread(function()
+    while not NetworkIsSessionStarted() do
+        Citizen.Wait(0)
+    end
+
+    -- disable arena wars emitters
+    SetStaticEmitterEnabled('SE_DLC_AW_ARENA_CONSTRUCTION_01', false)
+    SetStaticEmitterEnabled('SE_DLC_AW_ARENA_CROWD_BACKGROUND_MAIN', false)
+    SetStaticEmitterEnabled('SE_DLC_AW_CROWD_EXTERIOR_LOBBY', false)
+    SetStaticEmitterEnabled('SE_DLC_AW_CROWD_INTERIOR_LOBBY', false)
+end)
