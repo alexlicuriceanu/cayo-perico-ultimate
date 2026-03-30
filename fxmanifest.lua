@@ -8,7 +8,8 @@ version '1.0.0'
 client_scripts {
     "client.lua",
     "cayo_ipls.lua",
-    "config.lua"
+    "config.lua",
+    "utils.lua"
 }
 
 this_is_a_map 'yes'
