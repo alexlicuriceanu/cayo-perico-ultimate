@@ -104,11 +104,19 @@ Citizen.CreateThread(function()
 
         if distance < cayo_perico_radius then
             SetAiGlobalPathNodesType(1)
+
+            if config.dynamic_waves then
+                SetDeepOceanScaler(0.0)
+            end
         else
             SetAiGlobalPathNodesType(0)
+
+            if config.dynamic_waves then
+                ResetDeepOceanScaler()
+            end
         end
 
-        Citizen.Wait(config.dynamic_path_nodes_delay)
+        Citizen.Wait(config.dynamic_actions_delay)
     end
 end)
 

@@ -26,4 +26,6 @@ config.disable_radio = false
 
 config.gps = true               -- enable gps route on cayo perico (disables LS gps if dynamic_path_nodes is not true)
 config.dynamic_path_nodes = true   -- dynamically enable/disable path nodes when entering/exiting Cayo Perico
-config.dynamic_path_nodes_delay = 3000 -- delay in ms for updating path nodes state
+config.dynamic_actions_delay = 3000 -- delay in ms for updating path nodes state and wave scaler
+
+config.dynamic_waves = true          -- dynamically enable/disable waves when entering/exiting Cayo Perico
