@@ -2,12 +2,12 @@
 -- @param t The table to get the keys from.
 -- @return keys A sorted table containing the keys of the input table.
 function get_keys(t)
-  local keys = {}
+    local keys = {}
 
-  for key, _ in pairs(t) do
-    table.insert(keys, key)
-  end
+    for key, _ in pairs(t) do
+        table.insert(keys, key)
+    end
 
-  table.sort(keys)
-  return keys
+    table.sort(keys)
+    return keys
 end
