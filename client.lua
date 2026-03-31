@@ -44,11 +44,10 @@ Citizen.CreateThread(function()
 
     --LoadGlobalWaterType(1)
     SetZoneEnabled(GetZoneFromNameId("PrLog"), not config.disable_prologue_snow or false)
-    
     SetScenarioGroupEnabled('Heist_Island_Peds', config.peds or true)
 
     -- audio stuff
-    SetAudioFlag('PlayerOnDLCHeist4Island', true)
+    SetAudioFlag('PlayerOnDLCHeist4Island', config.disable_radio)
     SetAmbientZoneListStatePersistent('AZL_DLC_Hei4_Island_Zones', config.ambient_zone or true, true)
     SetAmbientZoneListStatePersistent('AZL_DLC_Hei4_Island_Disabled_Zones', not config.ambient_zone or false, true)
 

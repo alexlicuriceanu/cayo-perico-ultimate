@@ -23,3 +23,4 @@ config.whale = true          -- enable beached whale
 -- https://forum.cfx.re/t/release-extra-map-tiles-v2-add-extra-textured-tiles-on-the-pause-menu-map-and-minimap-new-and-revamped-version 
 
 config.minimap_type = 'scaleform' -- options: 'compact', 'scaleform', 'off'
+config.disable_radio = false
