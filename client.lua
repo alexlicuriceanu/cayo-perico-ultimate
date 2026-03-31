@@ -14,41 +14,29 @@ local function enable_ipl_subset(ipl_subset, enable)
     end
 end
 
-local function enable_cayo_perico(enable)
-    enable_ipl_subset('main', enable)
-    enable_ipl_subset('shark', enable)
-    enable_ipl_subset('whale', enable)
-    enable_ipl_subset('sea_mines', enable)
-
-    if config.gate_open then
-        enable_ipl_subset('gate_open', enable)
-    elseif config.gate_open == false then
-        enable_ipl_subset('gate_closed', enable)
-    end
-
-    if config.hangar_open then
-        enable_ipl_subset('hangar_open', enable)
-    elseif config.hangar_open == false then
-        enable_ipl_subset('hangar_closed', enable)
-    end
-end
-
 Citizen.CreateThread(function()
     if not config.cayo_perico then
         return
     end
 
     -- load cayo perico ipls
-    enable_cayo_perico(true)
+    enable_ipl_subset('main', true)
+    enable_ipl_subset('shark', config.shark)
+    enable_ipl_subset('whale', config.whale)
+    enable_ipl_subset('sea_mines', config.sea_mines)
+    enable_ipl_subset('gate_open', config.gate_open)
+    enable_ipl_subset('gate_closed', config.gate_open == false)
+    enable_ipl_subset('hangar_open', config.hangar_open)
+    enable_ipl_subset('hangar_closed', config.hangar_open == false)
+
 
     -- misc natives
     if config.gps then
         SetAiGlobalPathNodesType(1)
     else
-        SetAiGlobalPathNodesType(0)
+        --SetAiGlobalPathNodesType(0)
     end
 
-    --LoadGlobalWaterType(1)
     SetZoneEnabled(GetZoneFromNameId("PrLog"), not config.disable_prologue_snow or false)
     SetScenarioGroupEnabled('Heist_Island_Peds', config.peds or true)
 
@@ -141,7 +129,7 @@ Citizen.CreateThread(function()
             end
         else
             if config.dynamic_path_nodes then
-                SetAiGlobalPathNodesType(0)
+                --SetAiGlobalPathNodesType(0)
             end
 
             if config.dynamic_waves then
@@ -180,4 +168,6 @@ AddEventHandler('onResourceStop', function(resourceName)
     for _, ipl_subset in pairs(cayo_perico_ipls) do
         enable_ipl_subset(ipl_subset, false)
     end
+
+    RemoveBlip(dummy_blip)
 end)
