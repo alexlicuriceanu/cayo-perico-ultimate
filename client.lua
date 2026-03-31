@@ -121,7 +121,7 @@ Citizen.CreateThread(function()
         return
     end
 
-    if not config.dynamic_path_nodes then
+    if not config.dynamic_path_nodes and not config.dynamic_waves then
         return
     end
 
@@ -132,16 +132,20 @@ Citizen.CreateThread(function()
         local distance = #(coords - cayo_perico_coords)
 
         if distance < cayo_perico_radius then
-            SetAiGlobalPathNodesType(1)
+            if config.dynamic_path_nodes then
+                SetAiGlobalPathNodesType(1)
+            end
 
             if config.dynamic_waves then
                 SetDeepOceanScaler(0.0)
             end
         else
-            SetAiGlobalPathNodesType(0)
+            if config.dynamic_path_nodes then
+                SetAiGlobalPathNodesType(0)
+            end
 
             if config.dynamic_waves then
-                ResetDeepOceanScaler()
+                SetDeepOceanScaler(config.dynamic_waves_scaler)
             end
         end
 
