@@ -157,17 +157,3 @@ Citizen.CreateThread(function()
     SetStaticEmitterEnabled('SE_DLC_AW_CROWD_EXTERIOR_LOBBY', config.disable_emitters or false)
     SetStaticEmitterEnabled('SE_DLC_AW_CROWD_INTERIOR_LOBBY', config.disable_emitters or false)
 end)
-
-
-AddEventHandler('onResourceStop', function(resourceName)
-    if resourceName ~= GetCurrentResourceName() then
-        return
-    end
-
-    local cayo_perico_ipls = get_keys(_cayo_ipls)
-    for _, ipl_subset in pairs(cayo_perico_ipls) do
-        enable_ipl_subset(ipl_subset, false)
-    end
-
-    RemoveBlip(dummy_blip)
-end)
