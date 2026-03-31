@@ -1,4 +1,5 @@
 local cayo_perico_coords = vector3(4700.0, -5150.0, 0.0)
+local cayo_perico_radius = 1500.0
 
 local function enable_ipl_subset(ipl_subset, enable)
     for _, ipl in pairs(_cayo_ipls[ipl_subset]) do
@@ -40,6 +41,8 @@ Citizen.CreateThread(function()
     -- misc natives
     if config.gps then
         SetAiGlobalPathNodesType(1)
+    else
+        SetAiGlobalPathNodesType(0)
     end
 
     --LoadGlobalWaterType(1)
@@ -85,6 +88,27 @@ Citizen.CreateThread(function()
         SetRadarAsExteriorThisFrame()
         SetRadarAsInteriorThisFrame(hash, x, y, z, 0)
         Citizen.Wait(0)
+    end
+end)
+
+Citizen.CreateThread(function()
+    if not config.dynamic_path_nodes then
+        return
+    end
+
+    while true do
+        local ped = PlayerPedId()
+        local coords = GetEntityCoords(ped)
+
+        local distance = #(coords - cayo_perico_coords)
+
+        if distance < cayo_perico_radius then
+            SetAiGlobalPathNodesType(1)
+        else
+            SetAiGlobalPathNodesType(0)
+        end
+
+        Citizen.Wait(config.dynamic_path_nodes_delay)
     end
 end)
 

@@ -7,7 +7,6 @@ config.disable_emitters = true          -- disable arena wars emitters
 
 config.peds = true              -- enable island peds
 config.ambient_zone = true      -- enable ambient zone (birds, insects, etc)
-config.gps = true               -- enable gps route on cayo perico
 
 config.vault_entity_set = 'pink_diamond_set' -- options: 'panther_set', 'pearl_necklace_set', 'pink_diamond_set', nil (disables the entity set)
 config.hangar_open = true        -- open the hangar
@@ -24,3 +23,7 @@ config.whale = true          -- enable beached whale
 
 config.minimap_type = 'scaleform' -- options: 'compact', 'scaleform', 'off'
 config.disable_radio = false
+
+config.gps = true               -- enable gps route on cayo perico (disables LS gps if dynamic_path_nodes is not true)
+config.dynamic_path_nodes = true   -- dynamically enable/disable path nodes when entering/exiting Cayo Perico
+config.dynamic_path_nodes_delay = 3000 -- delay in ms for updating path nodes state
