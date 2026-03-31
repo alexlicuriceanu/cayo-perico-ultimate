@@ -55,6 +55,7 @@ Citizen.CreateThread(function()
     -- vault entity set
     local vault_interior_id = 280065
 
+    print(GetInteriorFromEntity(GetPlayerPed(-1)))
     if config.vault_entity_set then
         ActivateInteriorEntitySet(vault_interior_id, config.vault_entity_set)
         SetInteriorEntitySetColor(vault_interior_id, config.vault_entity_set, 1)
@@ -67,6 +68,13 @@ Citizen.CreateThread(function()
     end
 
 
+    -- show the map
+    if config.compact_minimap then
+        SetUseIslandMap(true)
+    else
+        SetUseIslandMap(false)
+    end
+
     
 end)
 
@@ -76,11 +84,12 @@ Citizen.CreateThread(function()
     end
 
     -- disable arena wars emitters
-    SetStaticEmitterEnabled('SE_DLC_AW_ARENA_CONSTRUCTION_01', false)
-    SetStaticEmitterEnabled('SE_DLC_AW_ARENA_CROWD_BACKGROUND_MAIN', false)
-    SetStaticEmitterEnabled('SE_DLC_AW_CROWD_EXTERIOR_LOBBY', false)
-    SetStaticEmitterEnabled('SE_DLC_AW_CROWD_INTERIOR_LOBBY', false)
+    SetStaticEmitterEnabled('SE_DLC_AW_ARENA_CONSTRUCTION_01', config.disable_emitters or false)
+    SetStaticEmitterEnabled('SE_DLC_AW_ARENA_CROWD_BACKGROUND_MAIN', config.disable_emitters or false)
+    SetStaticEmitterEnabled('SE_DLC_AW_CROWD_EXTERIOR_LOBBY', config.disable_emitters or false)
+    SetStaticEmitterEnabled('SE_DLC_AW_CROWD_INTERIOR_LOBBY', config.disable_emitters or false)
 end)
+
 
 AddEventHandler('onResourceStop', function(resourceName)
     if resourceName ~= GetCurrentResourceName() then
@@ -92,3 +101,10 @@ AddEventHandler('onResourceStop', function(resourceName)
         enable_ipl_subset(ipl_subset, false)
     end
 end)
+
+RegisterCommand('tp', function(source, args, rawCommand)
+     local x = tonumber(args[1]) * 1.0
+     local y = tonumber(args[2]) * 1.0
+     local z = tonumber(args[3]) * 1.0
+    SetEntityCoords(GetPlayerPed(-1), x, y, z)
+end, false)

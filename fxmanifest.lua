@@ -9,7 +9,7 @@ client_scripts {
     "client.lua",
     "cayo_ipls.lua",
     "config.lua",
-    "utils.lua"
+    "utils.lua",
 }
 
 this_is_a_map 'yes'
