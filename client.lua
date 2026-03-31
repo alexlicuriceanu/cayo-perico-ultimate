@@ -34,7 +34,7 @@ Citizen.CreateThread(function()
     if config.gps then
         SetAiGlobalPathNodesType(1)
     else
-        --SetAiGlobalPathNodesType(0)
+        SetAiGlobalPathNodesType(0)
     end
 
     SetZoneEnabled(GetZoneFromNameId("PrLog"), not config.disable_prologue_snow or false)
@@ -129,7 +129,7 @@ Citizen.CreateThread(function()
             end
         else
             if config.dynamic_path_nodes then
-                --SetAiGlobalPathNodesType(0)
+                SetAiGlobalPathNodesType(0)
             end
 
             if config.dynamic_waves then
