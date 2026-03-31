@@ -1,4 +1,4 @@
-local cayo_perico_coords = vector3(4840.571, -5174.425, 2.0)
+local cayo_perico_coords = vector3(4700.0, -5150.0, 0.0)
 
 local function enable_ipl_subset(ipl_subset, enable)
     for _, ipl in pairs(_cayo_ipls[ipl_subset]) do
@@ -55,7 +55,6 @@ Citizen.CreateThread(function()
     -- vault entity set
     local vault_interior_id = 280065
 
-    print(GetInteriorFromEntity(GetPlayerPed(-1)))
     if config.vault_entity_set then
         ActivateInteriorEntitySet(vault_interior_id, config.vault_entity_set)
         SetInteriorEntitySetColor(vault_interior_id, config.vault_entity_set, 1)
@@ -66,17 +65,30 @@ Citizen.CreateThread(function()
         DeactivateInteriorEntitySet(vault_interior_id, 'panther_set')
         RefreshInterior(vault_interior_id)
     end
+end)
 
 
-    -- show the map
-    if config.compact_minimap then
-        SetUseIslandMap(true)
-    else
-        SetUseIslandMap(false)
+Citizen.CreateThread(function()
+    SetUseIslandMap(false)
+
+    if config.minimap_type == 'off' then
+       return
     end
 
+    if config.minimap_type == 'compact' then
+        SetUseIslandMap(true)
+    end
+
+    local hash = GetHashKey("h4_fake_islandx")
+    local x, y, z = table.unpack(cayo_perico_coords)
     
+    while true do
+        SetRadarAsExteriorThisFrame()
+        SetRadarAsInteriorThisFrame(hash, x, y, z, 0)
+        Citizen.Wait(0)
+    end
 end)
+
 
 Citizen.CreateThread(function()
     while not NetworkIsSessionStarted() do
@@ -101,10 +113,3 @@ AddEventHandler('onResourceStop', function(resourceName)
         enable_ipl_subset(ipl_subset, false)
     end
 end)
-
-RegisterCommand('tp', function(source, args, rawCommand)
-     local x = tonumber(args[1]) * 1.0
-     local y = tonumber(args[2]) * 1.0
-     local z = tonumber(args[3]) * 1.0
-    SetEntityCoords(GetPlayerPed(-1), x, y, z)
-end, false)

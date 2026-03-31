@@ -17,4 +17,9 @@ config.sea_mines = true          -- enable sea mines around the island
 config.shark = true          -- enable dead shark
 config.whale = true          -- enable beached whale
 
-config.compact_minimap = false
+-- [*] I highly suggest that if not using 'compact', you leave this to off and use
+-- extra-map-tiles to load textures for Cayo Perico. It is faster, better and more
+-- customizable.
+-- https://forum.cfx.re/t/release-extra-map-tiles-v2-add-extra-textured-tiles-on-the-pause-menu-map-and-minimap-new-and-revamped-version 
+
+config.minimap_type = 'scaleform' -- options: 'compact', 'scaleform', 'off'
