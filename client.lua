@@ -1,6 +1,9 @@
 local cayo_perico_coords = vector3(4700.0, -5150.0, 0.0)
 local cayo_perico_radius = 1500.0
 
+local dummy_blip = nil
+local dummy_blip_coords = vector3(5721.93, -6051.38, 0.0)
+
 local function enable_ipl_subset(ipl_subset, enable)
     for _, ipl in pairs(_cayo_ipls[ipl_subset]) do
         if enable then
@@ -67,10 +70,25 @@ Citizen.CreateThread(function()
         DeactivateInteriorEntitySet(vault_interior_id, 'panther_set')
         RefreshInterior(vault_interior_id)
     end
+
+
+    -- handle loading custom water
+    if config.custom_water_name and config.custom_water[config.custom_water_name] then
+        local custom_water_name = config.custom_water_name
+        local custom_water = config.custom_water[custom_water_name]
+        
+        LoadWaterFromPath(custom_water.resource_name, custom_water.path)
+        LoadGlobalWaterType(custom_water.global_water_type)
+        SetDeepOceanScaler(custom_water.deep_ocean_scaler)
+    end
 end)
 
 
 Citizen.CreateThread(function()
+    if not config.cayo_perico then
+        return
+    end
+
     SetUseIslandMap(false)
 
     if config.minimap_type == 'off' then
@@ -81,6 +99,12 @@ Citizen.CreateThread(function()
         SetUseIslandMap(true)
     end
 
+
+    -- set dummy blip
+    local blip_x, blip_y, blip_z = table.unpack(dummy_blip_coords)
+    dummy_blip = AddBlipForCoord(blip_x, blip_y, blip_z)
+    SetBlipAlpha(dummy_blip, 0)
+
     local hash = GetHashKey("h4_fake_islandx")
     local x, y, z = table.unpack(cayo_perico_coords)
     
@@ -89,9 +113,14 @@ Citizen.CreateThread(function()
         SetRadarAsInteriorThisFrame(hash, x, y, z, 0)
         Citizen.Wait(0)
     end
+
 end)
 
 Citizen.CreateThread(function()
+    if not config.cayo_perico then
+        return
+    end
+
     if not config.dynamic_path_nodes then
         return
     end
@@ -122,6 +151,10 @@ end)
 
 
 Citizen.CreateThread(function()
+    if not config.cayo_perico then
+        return
+    end
+
     while not NetworkIsSessionStarted() do
         Citizen.Wait(0)
     end

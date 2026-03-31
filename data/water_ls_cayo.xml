@@ -1,0 +1,3978 @@
+<?xml version="1.0" encoding = "UTF-8"?>
+<WaterData>
+  <WaterQuads>
+    <Item>
+	<minX value="-4000" />
+	<maxX value="4500" />
+	<minY value="-4000" />
+	<maxY value="8000" />
+	<Type value="0" />
+	<IsInvisible value="false" />
+	<HasLimitedDepth value="false" />
+	<z value="0.000000" />
+	<a1 value="26" />
+	<a2 value="26" />
+	<a3 value="26" />
+	<a4 value="26" />
+	<NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="5140" />
+      <maxX value="5372" />
+      <minY value="-5880" />
+      <maxY value="-5712" />
+      <Type value="1" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="4282" />
+      <maxX value="4486" />
+      <minY value="-5018" />
+      <maxY value="-4584" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="4206" />
+      <maxX value="4282" />
+      <minY value="-5018" />
+      <maxY value="-4608" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="4130" />
+      <maxX value="4206" />
+      <minY value="-5018" />
+      <maxY value="-4628" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="4046" />
+      <maxX value="4130" />
+      <minY value="-5018" />
+      <maxY value="-4658" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="3950" />
+      <maxX value="4046" />
+      <minY value="-5018" />
+      <maxY value="-4720" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="3858" />
+      <maxX value="3950" />
+      <minY value="-5018" />
+      <maxY value="-4752" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="4328" />
+      <maxX value="4730" />
+      <minY value="-4420" />
+      <maxY value="-4296" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="4832" />
+      <maxX value="5516" />
+      <minY value="-4358" />
+      <maxY value="-4296" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="5006" />
+      <maxX value="5516" />
+      <minY value="-4484" />
+      <maxY value="-4418" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="5050" />
+      <maxX value="5516" />
+      <minY value="-4546" />
+      <maxY value="-4484" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="5126" />
+      <maxX value="5516" />
+      <minY value="-4596" />
+      <maxY value="-4546" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="5232" />
+      <maxX value="5516" />
+      <minY value="-4962" />
+      <maxY value="-4596" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="5182" />
+      <maxX value="5232" />
+      <minY value="-4904" />
+      <maxY value="-4634" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="5128" />
+      <maxX value="5182" />
+      <minY value="-4878" />
+      <maxY value="-4700" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="5292" />
+      <maxX value="5516" />
+      <minY value="-5054" />
+      <maxY value="-4962" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="5312" />
+      <maxX value="5516" />
+      <minY value="-5082" />
+      <maxY value="-5054" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="5360" />
+      <maxX value="5516" />
+      <minY value="-5102" />
+      <maxY value="-5082" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="5466" />
+      <maxX value="5516" />
+      <minY value="-5132" />
+      <maxY value="-5102" />
+      <Type value="3" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="4762" />
+      <maxX value="4796" />
+      <minY value="-5486" />
+      <maxY value="-5044" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="4796" />
+      <maxX value="4822" />
+      <minY value="-5450" />
+      <maxY value="-5082" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="4822" />
+      <maxX value="4852" />
+      <minY value="-5420" />
+      <maxY value="-5112" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="4852" />
+      <maxX value="4886" />
+      <minY value="-5180" />
+      <maxY value="-5118" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="22" />
+      <a3 value="26" />
+      <a4 value="22" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="4886" />
+      <maxX value="4970" />
+      <minY value="-5198" />
+      <maxY value="-5092" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="22" />
+      <a2 value="22" />
+      <a3 value="22" />
+      <a4 value="22" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="4918" />
+      <maxX value="4958" />
+      <minY value="-5092" />
+      <maxY value="-5038" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="22" />
+      <a2 value="22" />
+      <a3 value="22" />
+      <a4 value="22" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="4958" />
+      <maxX value="5122" />
+      <minY value="-5070" />
+      <maxY value="-5034" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="22" />
+      <a2 value="22" />
+      <a3 value="22" />
+      <a4 value="22" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="5054" />
+      <maxX value="5120" />
+      <minY value="-5086" />
+      <maxY value="-5070" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="22" />
+      <a2 value="22" />
+      <a3 value="22" />
+      <a4 value="22" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="5070" />
+      <maxX value="5120" />
+      <minY value="-5100" />
+      <maxY value="-5086" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="22" />
+      <a2 value="22" />
+      <a3 value="22" />
+      <a4 value="22" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="5076" />
+      <maxX value="5116" />
+      <minY value="-5114" />
+      <maxY value="-5100" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="22" />
+      <a2 value="22" />
+      <a3 value="22" />
+      <a4 value="22" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="5086" />
+      <maxX value="5114" />
+      <minY value="-5256" />
+      <maxY value="-5114" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="22" />
+      <a2 value="22" />
+      <a3 value="22" />
+      <a4 value="22" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="5080" />
+      <maxX value="5124" />
+      <minY value="-4670" />
+      <maxY value="-4620" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="22" />
+      <a2 value="22" />
+      <a3 value="22" />
+      <a4 value="22" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="2700" />
+      <maxX value="3858" />
+      <minY value="-5018" />
+      <maxY value="-3150" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="3858" />
+      <maxX value="6700" />
+      <minY value="-4296" />
+      <maxY value="-3150" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="2700" />
+      <maxX value="4762" />
+      <minY value="-5922" />
+      <maxY value="-5018" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="2700" />
+      <maxX value="4806" />
+      <minY value="-7150" />
+      <maxY value="-5922" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="4806" />
+      <maxX value="6700" />
+      <minY value="-7150" />
+      <maxY value="-5880" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="5516" />
+      <maxX value="6700" />
+      <minY value="-5192" />
+      <maxY value="-4296" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="5590" />
+      <maxX value="6700" />
+      <minY value="-5390" />
+      <maxY value="-5192" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="5534" />
+      <maxX value="6700" />
+      <minY value="-5518" />
+      <maxY value="-5390" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="5506" />
+      <maxX value="6700" />
+      <minY value="-5666" />
+      <maxY value="-5518" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="5538" />
+      <maxX value="6700" />
+      <minY value="-5880" />
+      <maxY value="-5666" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="5118" />
+      <maxX value="5128" />
+      <minY value="-4788" />
+      <maxY value="-4740" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="5076" />
+      <maxX value="5140" />
+      <minY value="-5880" />
+      <maxY value="-5726" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="5040" />
+      <maxX value="5076" />
+      <minY value="-5880" />
+      <maxY value="-5760" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="4998" />
+      <maxX value="5014" />
+      <minY value="-5880" />
+      <maxY value="-5808" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="5014" />
+      <maxX value="5040" />
+      <minY value="-5880" />
+      <maxY value="-5778" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="4868" />
+      <maxX value="5516" />
+      <minY value="-4418" />
+      <maxY value="-4358" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="4124" />
+      <maxX value="4240" />
+      <minY value="-4538" />
+      <maxY value="-4296" />
+      <Type value="2" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="4066" />
+      <maxX value="4124" />
+      <minY value="-4602" />
+      <maxY value="-4296" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="3984" />
+      <maxX value="4066" />
+      <minY value="-4640" />
+      <maxY value="-4296" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="3858" />
+      <maxX value="3984" />
+      <minY value="-4664" />
+      <maxY value="-4296" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="5124" />
+      <maxX value="5172" />
+      <minY value="-4680" />
+      <maxY value="-4626" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="22" />
+      <a2 value="22" />
+      <a3 value="22" />
+      <a4 value="22" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="5128" />
+      <maxX value="5172" />
+      <minY value="-4700" />
+      <maxY value="-4680" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="22" />
+      <a4 value="22" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="4838" />
+      <maxX value="4900" />
+      <minY value="-5018" />
+      <maxY value="-4658" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="22" />
+      <a2 value="22" />
+      <a3 value="22" />
+      <a4 value="22" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="4486" />
+      <maxX value="4838" />
+      <minY value="-5018" />
+      <maxY value="-4802" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="4486" />
+      <maxX value="4724" />
+      <minY value="-4802" />
+      <maxY value="-4752" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="4484" />
+      <maxX value="4724" />
+      <minY value="-4752" />
+      <maxY value="-4658" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="22" />
+      <a2 value="22" />
+      <a3 value="22" />
+      <a4 value="22" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="4724" />
+      <maxX value="4838" />
+      <minY value="-4802" />
+      <maxY value="-4658" />
+      <Type value="0" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="22" />
+      <a2 value="22" />
+      <a3 value="22" />
+      <a4 value="22" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="5198" />
+      <maxX value="5232" />
+      <minY value="-4610" />
+      <maxY value="-4596" />
+      <Type value="3" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="5162" />
+      <maxX value="5182" />
+      <minY value="-4892" />
+      <maxY value="-4878" />
+      <Type value="3" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="5098" />
+      <maxX value="5126" />
+      <minY value="-4570" />
+      <maxY value="-4546" />
+      <Type value="3" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+    <Item>
+      <minX value="5032" />
+      <maxX value="5050" />
+      <minY value="-4498" />
+      <maxY value="-4484" />
+      <Type value="3" />
+      <IsInvisible value="false" />
+      <HasLimitedDepth value="false" />
+      <z value="0.0" />
+      <a1 value="26" />
+      <a2 value="26" />
+      <a3 value="26" />
+      <a4 value="26" />
+      <NoStencil value="false" />
+    </Item>
+  </WaterQuads>
+  <CalmingQuads>
+    <Item>
+      <minX value="4864" />
+      <maxX value="4884" />
+      <minY value="-5184" />
+      <maxY value="-5112" />
+      <fDampening value="0.05" />
+    </Item>
+    <Item>
+      <minX value="5080" />
+      <maxX value="5120" />
+      <minY value="-5260" />
+      <maxY value="-5104" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="5136" />
+      <maxX value="5160" />
+      <minY value="-4728" />
+      <maxY value="-4708" />
+      <fDampening value="0.3" />
+    </Item>
+    <Item>
+      <minX value="5120" />
+      <maxX value="5160" />
+      <minY value="-4768" />
+      <maxY value="-4728" />
+      <fDampening value="0.3" />
+    </Item>
+    <Item>
+      <minX value="5124" />
+      <maxX value="5136" />
+      <minY value="-4728" />
+      <maxY value="-4696" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="4618" />
+      <maxX value="4672" />
+      <minY value="-4772" />
+      <maxY value="-4754" />
+      <fDampening value="0.1" />
+    </Item>
+    <Item>
+      <minX value="4690" />
+      <maxX value="4698" />
+      <minY value="-4888" />
+      <maxY value="-4876" />
+      <fDampening value="0.05" />
+    </Item>
+    <Item>
+      <minX value="5136" />
+      <maxX value="5168" />
+      <minY value="-4708" />
+      <maxY value="-4696" />
+      <fDampening value="0.2" />
+    </Item>
+    <Item>
+      <minX value="5160" />
+      <maxX value="5180" />
+      <minY value="-4744" />
+      <maxY value="-4708" />
+      <fDampening value="0.3" />
+    </Item>
+    <Item>
+      <minX value="5012" />
+      <maxX value="5044" />
+      <minY value="-5784" />
+      <maxY value="-5756" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="5044" />
+      <maxX value="5056" />
+      <minY value="-5784" />
+      <maxY value="-5756" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="5068" />
+      <maxX value="5076" />
+      <minY value="-5768" />
+      <maxY value="-5744" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="5076" />
+      <maxX value="5088" />
+      <minY value="-5748" />
+      <maxY value="-5724" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="5012" />
+      <maxX value="5028" />
+      <minY value="-5802" />
+      <maxY value="-5784" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="5056" />
+      <maxX value="5068" />
+      <minY value="-5776" />
+      <maxY value="-5756" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="5028" />
+      <maxX value="5044" />
+      <minY value="-5790" />
+      <maxY value="-5784" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="5506" />
+      <maxX value="5564" />
+      <minY value="-5518" />
+      <maxY value="-5386" />
+      <fDampening value="0.75" />
+    </Item>
+    <Item>
+      <minX value="5564" />
+      <maxX value="5590" />
+      <minY value="-5504" />
+      <maxY value="-5386" />
+      <fDampening value="0.75" />
+    </Item>
+    <Item>
+      <minX value="5252" />
+      <maxX value="5334" />
+      <minY value="-5072" />
+      <maxY value="-4930" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="5334" />
+      <maxX value="5388" />
+      <minY value="-5096" />
+      <maxY value="-5048" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="5388" />
+      <maxX value="5456" />
+      <minY value="-5116" />
+      <maxY value="-5066" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="5456" />
+      <maxX value="5512" />
+      <minY value="-5140" />
+      <maxY value="-5080" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="5512" />
+      <maxX value="5558" />
+      <minY value="-5186" />
+      <maxY value="-5102" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="5558" />
+      <maxX value="5610" />
+      <minY value="-5206" />
+      <maxY value="-5150" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="5612" />
+      <maxX value="5638" />
+      <minY value="-5218" />
+      <maxY value="-5174" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="5620" />
+      <maxX value="5654" />
+      <minY value="-5264" />
+      <maxY value="-5218" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="5600" />
+      <maxX value="5646" />
+      <minY value="-5354" />
+      <maxY value="-5264" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="5590" />
+      <maxX value="5634" />
+      <minY value="-5460" />
+      <maxY value="-5354" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="5334" />
+      <maxX value="5374" />
+      <minY value="-5048" />
+      <maxY value="-4966" />
+      <fDampening value="0.6" />
+    </Item>
+    <Item>
+      <minX value="5120" />
+      <maxX value="5152" />
+      <minY value="-4884" />
+      <maxY value="-4808" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="5574" />
+      <maxX value="5594" />
+      <minY value="-5470" />
+      <maxY value="-5450" />
+      <fDampening value="0.2" />
+    </Item>
+    <Item>
+      <minX value="5564" />
+      <maxX value="5574" />
+      <minY value="-5478" />
+      <maxY value="-5456" />
+      <fDampening value="0.2" />
+    </Item>
+    <Item>
+      <minX value="5556" />
+      <maxX value="5564" />
+      <minY value="-5478" />
+      <maxY value="-5464" />
+      <fDampening value="0.2" />
+    </Item>
+    <Item>
+      <minX value="5486" />
+      <maxX value="5570" />
+      <minY value="-5654" />
+      <maxY value="-5510" />
+      <fDampening value="0.75" />
+    </Item>
+    <Item>
+      <minX value="5616" />
+      <maxX value="5648" />
+      <minY value="-5492" />
+      <maxY value="-5454" />
+      <fDampening value="0.7" />
+    </Item>
+    <Item>
+      <minX value="5598" />
+      <maxX value="5632" />
+      <minY value="-5528" />
+      <maxY value="-5492" />
+      <fDampening value="0.7" />
+    </Item>
+    <Item>
+      <minX value="5570" />
+      <maxX value="5598" />
+      <minY value="-5550" />
+      <maxY value="-5510" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="5570" />
+      <maxX value="5632" />
+      <minY value="-5666" />
+      <maxY value="-5630" />
+      <fDampening value="0.7" />
+    </Item>
+    <Item>
+      <minX value="5590" />
+      <maxX value="5628" />
+      <minY value="-5694" />
+      <maxY value="-5666" />
+      <fDampening value="0.7" />
+    </Item>
+    <Item>
+      <minX value="5534" />
+      <maxX value="5590" />
+      <minY value="-5796" />
+      <maxY value="-5694" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="5576" />
+      <maxX value="5602" />
+      <minY value="-5826" />
+      <maxY value="-5782" />
+      <fDampening value="0.7" />
+    </Item>
+    <Item>
+      <minX value="5544" />
+      <maxX value="5576" />
+      <minY value="-5858" />
+      <maxY value="-5808" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="5510" />
+      <maxX value="5560" />
+      <minY value="-5902" />
+      <maxY value="-5858" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="4998" />
+      <maxX value="5026" />
+      <minY value="-5882" />
+      <maxY value="-5756" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="5128" />
+      <maxX value="5156" />
+      <minY value="-5768" />
+      <maxY value="-5724" />
+      <fDampening value="0.65" />
+    </Item>
+    <Item>
+      <minX value="5156" />
+      <maxX value="5204" />
+      <minY value="-5776" />
+      <maxY value="-5734" />
+      <fDampening value="0.3" />
+    </Item>
+    <Item>
+      <minX value="5176" />
+      <maxX value="5204" />
+      <minY value="-5798" />
+      <maxY value="-5776" />
+      <fDampening value="0.1" />
+    </Item>
+    <Item>
+      <minX value="5204" />
+      <maxX value="5240" />
+      <minY value="-5808" />
+      <maxY value="-5780" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="5240" />
+      <maxX value="5270" />
+      <minY value="-5830" />
+      <maxY value="-5780" />
+      <fDampening value="0.3" />
+    </Item>
+    <Item>
+      <minX value="5270" />
+      <maxX value="5294" />
+      <minY value="-5850" />
+      <maxY value="-5810" />
+      <fDampening value="0.1" />
+    </Item>
+    <Item>
+      <minX value="5276" />
+      <maxX value="5280" />
+      <minY value="-5858" />
+      <maxY value="-5850" />
+      <fDampening value="0.1" />
+    </Item>
+    <Item>
+      <minX value="5280" />
+      <maxX value="5286" />
+      <minY value="-5856" />
+      <maxY value="-5850" />
+      <fDampening value="0.1" />
+    </Item>
+    <Item>
+      <minX value="5098" />
+      <maxX value="5128" />
+      <minY value="-5756" />
+      <maxY value="-5730" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="5000" />
+      <maxX value="5052" />
+      <minY value="-5928" />
+      <maxY value="-5868" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="4964" />
+      <maxX value="5028" />
+      <minY value="-5956" />
+      <maxY value="-5928" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="4916" />
+      <maxX value="4964" />
+      <minY value="-5956" />
+      <maxY value="-5912" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="4852" />
+      <maxX value="4916" />
+      <minY value="-5980" />
+      <maxY value="-5932" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="4916" />
+      <maxX value="4960" />
+      <minY value="-5912" />
+      <maxY value="-5884" />
+      <fDampening value="0.2" />
+    </Item>
+    <Item>
+      <minX value="4856" />
+      <maxX value="4916" />
+      <minY value="-5932" />
+      <maxY value="-5896" />
+      <fDampening value="0.2" />
+    </Item>
+    <Item>
+      <minX value="4816" />
+      <maxX value="4888" />
+      <minY value="-6024" />
+      <maxY value="-5980" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="4784" />
+      <maxX value="4864" />
+      <minY value="-6056" />
+      <maxY value="-6024" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="4752" />
+      <maxX value="4784" />
+      <minY value="-6044" />
+      <maxY value="-5972" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="4728" />
+      <maxX value="4752" />
+      <minY value="-6016" />
+      <maxY value="-5940" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="4708" />
+      <maxX value="4728" />
+      <minY value="-5980" />
+      <maxY value="-5812" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="4696" />
+      <maxX value="4708" />
+      <minY value="-5876" />
+      <maxY value="-5764" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="4680" />
+      <maxX value="4696" />
+      <minY value="-5820" />
+      <maxY value="-5760" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="4688" />
+      <maxX value="4700" />
+      <minY value="-5760" />
+      <maxY value="-5688" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="4668" />
+      <maxX value="4688" />
+      <minY value="-5704" />
+      <maxY value="-5660" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="4700" />
+      <maxX value="4724" />
+      <minY value="-5760" />
+      <maxY value="-5692" />
+      <fDampening value="0.2" />
+    </Item>
+    <Item>
+      <minX value="4644" />
+      <maxX value="4668" />
+      <minY value="-5692" />
+      <maxY value="-5620" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="4756" />
+      <maxX value="4840" />
+      <minY value="-5456" />
+      <maxY value="-5394" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="4828" />
+      <maxX value="4878" />
+      <minY value="-5132" />
+      <maxY value="-5104" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="5136" />
+      <maxX value="5144" />
+      <minY value="-4728" />
+      <maxY value="-4708" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="5398" />
+      <maxX value="5550" />
+      <minY value="-5942" />
+      <maxY value="-5902" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="5412" />
+      <maxX value="5510" />
+      <minY value="-5966" />
+      <maxY value="-5942" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="5430" />
+      <maxX value="5476" />
+      <minY value="-5984" />
+      <maxY value="-5966" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="5328" />
+      <maxX value="5398" />
+      <minY value="-5930" />
+      <maxY value="-5884" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="5304" />
+      <maxX value="5328" />
+      <minY value="-5904" />
+      <maxY value="-5846" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="5288" />
+      <maxX value="5304" />
+      <minY value="-5862" />
+      <maxY value="-5852" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="4668" />
+      <maxX value="4734" />
+      <minY value="-5642" />
+      <maxY value="-5600" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="4696" />
+      <maxX value="4740" />
+      <minY value="-5600" />
+      <maxY value="-5528" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="4706" />
+      <maxX value="4748" />
+      <minY value="-5528" />
+      <maxY value="-5506" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="4720" />
+      <maxX value="4764" />
+      <minY value="-5506" />
+      <maxY value="-5484" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="4740" />
+      <maxX value="4788" />
+      <minY value="-5484" />
+      <maxY value="-5456" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="4812" />
+      <maxX value="4854" />
+      <minY value="-5394" />
+      <maxY value="-5302" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="4800" />
+      <maxX value="4854" />
+      <minY value="-5302" />
+      <maxY value="-5184" />
+      <fDampening value="0.3" />
+    </Item>
+    <Item>
+      <minX value="4620" />
+      <maxX value="4656" />
+      <minY value="-4836" />
+      <maxY value="-4800" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="4636" />
+      <maxX value="4672" />
+      <minY value="-4800" />
+      <maxY value="-4772" />
+      <fDampening value="0.05" />
+    </Item>
+    <Item>
+      <minX value="4688" />
+      <maxX value="4800" />
+      <minY value="-5276" />
+      <maxY value="-5086" />
+      <fDampening value="0.3" />
+    </Item>
+    <Item>
+      <minX value="4462" />
+      <maxX value="4542" />
+      <minY value="-4732" />
+      <maxY value="-4714" />
+      <fDampening value="0.2" />
+    </Item>
+    <Item>
+      <minX value="4470" />
+      <maxX value="4516" />
+      <minY value="-4758" />
+      <maxY value="-4732" />
+      <fDampening value="0.3" />
+    </Item>
+    <Item>
+      <minX value="4326" />
+      <maxX value="4390" />
+      <minY value="-4664" />
+      <maxY value="-4642" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="4662" />
+      <maxX value="4702" />
+      <minY value="-4884" />
+      <maxY value="-4872" />
+      <fDampening value="0.1" />
+    </Item>
+    <Item>
+      <minX value="4672" />
+      <maxX value="4712" />
+      <minY value="-4814" />
+      <maxY value="-4754" />
+      <fDampening value="0.1" />
+    </Item>
+    <Item>
+      <minX value="4668" />
+      <maxX value="4706" />
+      <minY value="-4876" />
+      <maxY value="-4814" />
+      <fDampening value="0.2" />
+    </Item>
+    <Item>
+      <minX value="4706" />
+      <maxX value="4722" />
+      <minY value="-5086" />
+      <maxY value="-5036" />
+      <fDampening value="0.3" />
+    </Item>
+    <Item>
+      <minX value="4722" />
+      <maxX value="4786" />
+      <minY value="-5086" />
+      <maxY value="-5036" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="4800" />
+      <maxX value="4864" />
+      <minY value="-5184" />
+      <maxY value="-5086" />
+      <fDampening value="0.1" />
+    </Item>
+    <Item>
+      <minX value="4622" />
+      <maxX value="4688" />
+      <minY value="-5128" />
+      <maxY value="-5100" />
+      <fDampening value="0.4" />
+    </Item>
+    <Item>
+      <minX value="4632" />
+      <maxX value="4666" />
+      <minY value="-5100" />
+      <maxY value="-5086" />
+      <fDampening value="0.3" />
+    </Item>
+    <Item>
+      <minX value="4646" />
+      <maxX value="4666" />
+      <minY value="-5086" />
+      <maxY value="-5066" />
+      <fDampening value="0.3" />
+    </Item>
+    <Item>
+      <minX value="4740" />
+      <maxX value="4844" />
+      <minY value="-4772" />
+      <maxY value="-4728" />
+      <fDampening value="0.1" />
+    </Item>
+    <Item>
+      <minX value="4790" />
+      <maxX value="4844" />
+      <minY value="-4860" />
+      <maxY value="-4772" />
+      <fDampening value="0.4" />
+    </Item>
+    <Item>
+      <minX value="4108" />
+      <maxX value="4248" />
+      <minY value="-4682" />
+      <maxY value="-4642" />
+      <fDampening value="0.4" />
+    </Item>
+    <Item>
+      <minX value="4180" />
+      <maxX value="4438" />
+      <minY value="-4642" />
+      <maxY value="-4586" />
+      <fDampening value="0.3" />
+    </Item>
+    <Item>
+      <minX value="4032" />
+      <maxX value="4160" />
+      <minY value="-4728" />
+      <maxY value="-4682" />
+      <fDampening value="0.4" />
+    </Item>
+    <Item>
+      <minX value="3962" />
+      <maxX value="4080" />
+      <minY value="-4768" />
+      <maxY value="-4728" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="3856" />
+      <maxX value="4012" />
+      <minY value="-4796" />
+      <maxY value="-4768" />
+      <fDampening value="0.3" />
+    </Item>
+    <Item>
+      <minX value="3848" />
+      <maxX value="3964" />
+      <minY value="-4816" />
+      <maxY value="-4796" />
+      <fDampening value="0.3" />
+    </Item>
+    <Item>
+      <minX value="3810" />
+      <maxX value="3848" />
+      <minY value="-4818" />
+      <maxY value="-4646" />
+      <fDampening value="0.3" />
+    </Item>
+    <Item>
+      <minX value="3784" />
+      <maxX value="3810" />
+      <minY value="-4780" />
+      <maxY value="-4658" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="3990" />
+      <maxX value="4068" />
+      <minY value="-4598" />
+      <maxY value="-4574" />
+      <fDampening value="0.3" />
+    </Item>
+    <Item>
+      <minX value="4066" />
+      <maxX value="4130" />
+      <minY value="-4524" />
+      <maxY value="-4492" />
+      <fDampening value="0.4" />
+    </Item>
+    <Item>
+      <minX value="4086" />
+      <maxX value="4146" />
+      <minY value="-4492" />
+      <maxY value="-4460" />
+      <fDampening value="0.3" />
+    </Item>
+    <Item>
+      <minX value="4102" />
+      <maxX value="4170" />
+      <minY value="-4460" />
+      <maxY value="-4412" />
+      <fDampening value="0.4" />
+    </Item>
+    <Item>
+      <minX value="4114" />
+      <maxX value="4172" />
+      <minY value="-4412" />
+      <maxY value="-4382" />
+      <fDampening value="0.3" />
+    </Item>
+    <Item>
+      <minX value="4138" />
+      <maxX value="4196" />
+      <minY value="-4382" />
+      <maxY value="-4340" />
+      <fDampening value="0.3" />
+    </Item>
+    <Item>
+      <minX value="4150" />
+      <maxX value="4208" />
+      <minY value="-4340" />
+      <maxY value="-4316" />
+      <fDampening value="0.3" />
+    </Item>
+    <Item>
+      <minX value="4164" />
+      <maxX value="4242" />
+      <minY value="-4316" />
+      <maxY value="-4292" />
+      <fDampening value="0.4" />
+    </Item>
+    <Item>
+      <minX value="4176" />
+      <maxX value="4364" />
+      <minY value="-4292" />
+      <maxY value="-4272" />
+      <fDampening value="0.4" />
+    </Item>
+    <Item>
+      <minX value="4220" />
+      <maxX value="4332" />
+      <minY value="-4272" />
+      <maxY value="-4260" />
+      <fDampening value="0.4" />
+    </Item>
+    <Item>
+      <minX value="4246" />
+      <maxX value="4290" />
+      <minY value="-4260" />
+      <maxY value="-4248" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="4322" />
+      <maxX value="4380" />
+      <minY value="-4354" />
+      <maxY value="-4292" />
+      <fDampening value="0.3" />
+    </Item>
+    <Item>
+      <minX value="4380" />
+      <maxX value="4396" />
+      <minY value="-4360" />
+      <maxY value="-4308" />
+      <fDampening value="0.3" />
+    </Item>
+    <Item>
+      <minX value="4396" />
+      <maxX value="4426" />
+      <minY value="-4376" />
+      <maxY value="-4328" />
+      <fDampening value="0.4" />
+    </Item>
+    <Item>
+      <minX value="4426" />
+      <maxX value="4502" />
+      <minY value="-4406" />
+      <maxY value="-4338" />
+      <fDampening value="0.4" />
+    </Item>
+    <Item>
+      <minX value="4502" />
+      <maxX value="4590" />
+      <minY value="-4420" />
+      <maxY value="-4352" />
+      <fDampening value="0.4" />
+    </Item>
+    <Item>
+      <minX value="4590" />
+      <maxX value="4662" />
+      <minY value="-4428" />
+      <maxY value="-4338" />
+      <fDampening value="0.3" />
+    </Item>
+    <Item>
+      <minX value="4662" />
+      <maxX value="4724" />
+      <minY value="-4416" />
+      <maxY value="-4296" />
+      <fDampening value="0.2" />
+    </Item>
+    <Item>
+      <minX value="4680" />
+      <maxX value="4900" />
+      <minY value="-4296" />
+      <maxY value="-4266" />
+      <fDampening value="0.3" />
+    </Item>
+    <Item>
+      <minX value="4714" />
+      <maxX value="4854" />
+      <minY value="-4266" />
+      <maxY value="-4238" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="4846" />
+      <maxX value="4912" />
+      <minY value="-4352" />
+      <maxY value="-4296" />
+      <fDampening value="0.3" />
+    </Item>
+    <Item>
+      <minX value="5230" />
+      <maxX value="5248" />
+      <minY value="-4608" />
+      <maxY value="-4580" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="3962" />
+      <maxX value="4002" />
+      <minY value="-4746" />
+      <maxY value="-4718" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="4002" />
+      <maxX value="4034" />
+      <minY value="-4730" />
+      <maxY value="-4682" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="4034" />
+      <maxX value="4074" />
+      <minY value="-4704" />
+      <maxY value="-4648" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="4074" />
+      <maxX value="4108" />
+      <minY value="-4682" />
+      <maxY value="-4648" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="4104" />
+      <maxX value="4144" />
+      <minY value="-4658" />
+      <maxY value="-4616" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="4002" />
+      <maxX value="4046" />
+      <minY value="-4640" />
+      <maxY value="-4616" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="4170" />
+      <maxX value="4222" />
+      <minY value="-4630" />
+      <maxY value="-4580" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="4222" />
+      <maxX value="4292" />
+      <minY value="-4610" />
+      <maxY value="-4580" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="4276" />
+      <maxX value="4352" />
+      <minY value="-4598" />
+      <maxY value="-4570" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="4322" />
+      <maxX value="4422" />
+      <minY value="-4458" />
+      <maxY value="-4382" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="4318" />
+      <maxX value="4368" />
+      <minY value="-4382" />
+      <maxY value="-4338" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="3848" />
+      <maxX value="3962" />
+      <minY value="-4768" />
+      <maxY value="-4646" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="4882" />
+      <maxX value="4906" />
+      <minY value="-4370" />
+      <maxY value="-4352" />
+      <fDampening value="0.2" />
+    </Item>
+    <Item>
+      <minX value="4830" />
+      <maxX value="4846" />
+      <minY value="-4352" />
+      <maxY value="-4296" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="4906" />
+      <maxX value="5004" />
+      <minY value="-4434" />
+      <maxY value="-4394" />
+      <fDampening value="0.3" />
+    </Item>
+    <Item>
+      <minX value="4128" />
+      <maxX value="4170" />
+      <minY value="-4522" />
+      <maxY value="-4492" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="4146" />
+      <maxX value="4176" />
+      <minY value="-4492" />
+      <maxY value="-4460" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="4162" />
+      <maxX value="4202" />
+      <minY value="-4460" />
+      <maxY value="-4416" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="4182" />
+      <maxX value="4222" />
+      <minY value="-4416" />
+      <maxY value="-4374" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="4200" />
+      <maxX value="4238" />
+      <minY value="-4374" />
+      <maxY value="-4334" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="4220" />
+      <maxX value="4244" />
+      <minY value="-4334" />
+      <maxY value="-4296" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="4110" />
+      <maxX value="4146" />
+      <minY value="-4568" />
+      <maxY value="-4522" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="4078" />
+      <maxX value="4146" />
+      <minY value="-4602" />
+      <maxY value="-4568" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="4046" />
+      <maxX value="4078" />
+      <minY value="-4640" />
+      <maxY value="-4598" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="3818" />
+      <maxX value="4002" />
+      <minY value="-4646" />
+      <maxY value="-4622" />
+      <fDampening value="0.2" />
+    </Item>
+    <Item>
+      <minX value="4144" />
+      <maxX value="4170" />
+      <minY value="-4636" />
+      <maxY value="-4616" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="4028" />
+      <maxX value="4110" />
+      <minY value="-4574" />
+      <maxY value="-4552" />
+      <fDampening value="0.3" />
+    </Item>
+    <Item>
+      <minX value="4054" />
+      <maxX value="4110" />
+      <minY value="-4552" />
+      <maxY value="-4524" />
+      <fDampening value="0.3" />
+    </Item>
+    <Item>
+      <minX value="3848" />
+      <maxX value="4046" />
+      <minY value="-4622" />
+      <maxY value="-4598" />
+      <fDampening value="0.3" />
+    </Item>
+    <Item>
+      <minX value="4244" />
+      <maxX value="4328" />
+      <minY value="-4338" />
+      <maxY value="-4292" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="4706" />
+      <maxX value="4790" />
+      <minY value="-4866" />
+      <maxY value="-4772" />
+      <fDampening value="0.6" />
+    </Item>
+    <Item>
+      <minX value="4540" />
+      <maxX value="4790" />
+      <minY value="-5086" />
+      <maxY value="-4866" />
+      <fDampening value="0.6" />
+    </Item>
+    <Item>
+      <minX value="4470" />
+      <maxX value="4616" />
+      <minY value="-4938" />
+      <maxY value="-4758" />
+      <fDampening value="0.6" />
+    </Item>
+    <Item>
+      <minX value="4688" />
+      <maxX value="4812" />
+      <minY value="-5526" />
+      <maxY value="-5276" />
+      <fDampening value="0.6" />
+    </Item>
+    <Item>
+      <minX value="4438" />
+      <maxX value="4486" />
+      <minY value="-4714" />
+      <maxY value="-4584" />
+      <fDampening value="0.3" />
+    </Item>
+    <Item>
+      <minX value="4248" />
+      <maxX value="4470" />
+      <minY value="-4826" />
+      <maxY value="-4642" />
+      <fDampening value="0.6" />
+    </Item>
+    <Item>
+      <minX value="4080" />
+      <maxX value="4248" />
+      <minY value="-4844" />
+      <maxY value="-4682" />
+      <fDampening value="0.6" />
+    </Item>
+    <Item>
+      <minX value="3850" />
+      <maxX value="4080" />
+      <minY value="-4844" />
+      <maxY value="-4782" />
+      <fDampening value="0.6" />
+    </Item>
+    <Item>
+      <minX value="3740" />
+      <maxX value="3848" />
+      <minY value="-4844" />
+      <maxY value="-4598" />
+      <fDampening value="0.6" />
+    </Item>
+    <Item>
+      <minX value="3806" />
+      <maxX value="4068" />
+      <minY value="-4598" />
+      <maxY value="-4524" />
+      <fDampening value="0.6" />
+    </Item>
+    <Item>
+      <minX value="3942" />
+      <maxX value="4102" />
+      <minY value="-4524" />
+      <maxY value="-4412" />
+      <fDampening value="0.6" />
+    </Item>
+    <Item>
+      <minX value="4010" />
+      <maxX value="4138" />
+      <minY value="-4412" />
+      <maxY value="-4340" />
+      <fDampening value="0.6" />
+    </Item>
+    <Item>
+      <minX value="4082" />
+      <maxX value="4176" />
+      <minY value="-4340" />
+      <maxY value="-4272" />
+      <fDampening value="0.6" />
+    </Item>
+    <Item>
+      <minX value="4142" />
+      <maxX value="4364" />
+      <minY value="-4272" />
+      <maxY value="-4222" />
+      <fDampening value="0.6" />
+    </Item>
+    <Item>
+      <minX value="4364" />
+      <maxX value="4446" />
+      <minY value="-4338" />
+      <maxY value="-4238" />
+      <fDampening value="0.6" />
+    </Item>
+    <Item>
+      <minX value="4448" />
+      <maxX value="4680" />
+      <minY value="-4352" />
+      <maxY value="-4266" />
+      <fDampening value="0.6" />
+    </Item>
+    <Item>
+      <minX value="4680" />
+      <maxX value="4900" />
+      <minY value="-4266" />
+      <maxY value="-4188" />
+      <fDampening value="0.6" />
+    </Item>
+    <Item>
+      <minX value="4900" />
+      <maxX value="5050" />
+      <minY value="-4376" />
+      <maxY value="-4238" />
+      <fDampening value="0.6" />
+    </Item>
+    <Item>
+      <minX value="5050" />
+      <maxX value="5118" />
+      <minY value="-4464" />
+      <maxY value="-4352" />
+      <fDampening value="0.6" />
+    </Item>
+    <Item>
+      <minX value="5118" />
+      <maxX value="5176" />
+      <minY value="-4526" />
+      <maxY value="-4404" />
+      <fDampening value="0.6" />
+    </Item>
+    <Item>
+      <minX value="5176" />
+      <maxX value="5230" />
+      <minY value="-4568" />
+      <maxY value="-4464" />
+      <fDampening value="0.6" />
+    </Item>
+    <Item>
+      <minX value="5230" />
+      <maxX value="5268" />
+      <minY value="-4606" />
+      <maxY value="-4550" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="5256" />
+      <maxX value="5304" />
+      <minY value="-4844" />
+      <maxY value="-4782" />
+      <fDampening value="0.6" />
+    </Item>
+    <Item>
+      <minX value="4598" />
+      <maxX value="4688" />
+      <minY value="-5524" />
+      <maxY value="-5128" />
+      <fDampening value="0.6" />
+    </Item>
+    <Item>
+      <minX value="4610" />
+      <maxX value="4696" />
+      <minY value="-5620" />
+      <maxY value="-5524" />
+      <fDampening value="0.6" />
+    </Item>
+    <Item>
+      <minX value="5160" />
+      <maxX value="5256" />
+      <minY value="-4888" />
+      <maxY value="-4728" />
+      <fDampening value="0.6" />
+    </Item>
+    <Item>
+      <minX value="5180" />
+      <maxX value="5256" />
+      <minY value="-4728" />
+      <maxY value="-4676" />
+      <fDampening value="0.4" />
+    </Item>
+    <Item>
+      <minX value="5124" />
+      <maxX value="5168" />
+      <minY value="-4696" />
+      <maxY value="-4680" />
+      <fDampening value="0.05" />
+    </Item>
+    <Item>
+      <minX value="5180" />
+      <maxX value="5196" />
+      <minY value="-4702" />
+      <maxY value="-4632" />
+      <fDampening value="0.1" />
+    </Item>
+    <Item>
+      <minX value="5180" />
+      <maxX value="5196" />
+      <minY value="-4712" />
+      <maxY value="-4702" />
+      <fDampening value="0.2" />
+    </Item>
+    <Item>
+      <minX value="5228" />
+      <maxX value="5276" />
+      <minY value="-4930" />
+      <maxY value="-4888" />
+      <fDampening value="0.3" />
+    </Item>
+    <Item>
+      <minX value="5276" />
+      <maxX value="5292" />
+      <minY value="-4930" />
+      <maxY value="-4888" />
+      <fDampening value="0.2" />
+    </Item>
+    <Item>
+      <minX value="4882" />
+      <maxX value="4906" />
+      <minY value="-4420" />
+      <maxY value="-4370" />
+      <fDampening value="0.025" />
+    </Item>
+    <Item>
+      <minX value="5292" />
+      <maxX value="5376" />
+      <minY value="-4908" />
+      <maxY value="-4878" />
+      <fDampening value="0.1" />
+    </Item>
+    <Item>
+      <minX value="5292" />
+      <maxX value="5348" />
+      <minY value="-4930" />
+      <maxY value="-4908" />
+      <fDampening value="0.2" />
+    </Item>
+    <Item>
+      <minX value="4666" />
+      <maxX value="4688" />
+      <minY value="-5100" />
+      <maxY value="-5058" />
+      <fDampening value="0.1" />
+    </Item>
+    <Item>
+      <minX value="4688" />
+      <maxX value="4706" />
+      <minY value="-5104" />
+      <maxY value="-5050" />
+      <fDampening value="0.1" />
+    </Item>
+    <Item>
+      <minX value="4884" />
+      <maxX value="5124" />
+      <minY value="-5104" />
+      <maxY value="-5032" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="4884" />
+      <maxX value="4980" />
+      <minY value="-5200" />
+      <maxY value="-5104" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="4728" />
+      <maxX value="4790" />
+      <minY value="-4992" />
+      <maxY value="-4954" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="5120" />
+      <maxX value="5180" />
+      <minY value="-4844" />
+      <maxY value="-4768" />
+      <fDampening value="0.2" />
+    </Item>
+    <Item>
+      <minX value="5152" />
+      <maxX value="5200" />
+      <minY value="-4872" />
+      <maxY value="-4844" />
+      <fDampening value="0.2" />
+    </Item>
+    <Item>
+      <minX value="5152" />
+      <maxX value="5228" />
+      <minY value="-4904" />
+      <maxY value="-4872" />
+      <fDampening value="0.2" />
+    </Item>
+    <Item>
+      <minX value="4824" />
+      <maxX value="4874" />
+      <minY value="-5200" />
+      <maxY value="-5168" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="4844" />
+      <maxX value="4870" />
+      <minY value="-4772" />
+      <maxY value="-4728" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="4870" />
+      <maxX value="4878" />
+      <minY value="-4776" />
+      <maxY value="-4728" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="4878" />
+      <maxX value="4886" />
+      <minY value="-4786" />
+      <maxY value="-4728" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="4870" />
+      <maxX value="4900" />
+      <minY value="-5018" />
+      <maxY value="-4860" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="4844" />
+      <maxX value="4858" />
+      <minY value="-4860" />
+      <maxY value="-4772" />
+      <fDampening value="0.4" />
+    </Item>
+    <Item>
+      <minX value="4858" />
+      <maxX value="4886" />
+      <minY value="-4860" />
+      <maxY value="-4772" />
+      <fDampening value="0.3" />
+    </Item>
+    <Item>
+      <minX value="4886" />
+      <maxX value="4900" />
+      <minY value="-4860" />
+      <maxY value="-4728" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="4790" />
+      <maxX value="4836" />
+      <minY value="-5018" />
+      <maxY value="-4860" />
+      <fDampening value="0.4" />
+    </Item>
+    <Item>
+      <minX value="4716" />
+      <maxX value="4790" />
+      <minY value="-5036" />
+      <maxY value="-4992" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="4836" />
+      <maxX value="4870" />
+      <minY value="-5018" />
+      <maxY value="-4860" />
+      <fDampening value="0.25" />
+    </Item>
+    <Item>
+      <minX value="4486" />
+      <maxX value="4618" />
+      <minY value="-4714" />
+      <maxY value="-4652" />
+      <fDampening value="0.215" />
+    </Item>
+    <Item>
+      <minX value="4494" />
+      <maxX value="4618" />
+      <minY value="-4758" />
+      <maxY value="-4714" />
+      <fDampening value="0.4" />
+    </Item>
+    <Item>
+      <minX value="4618" />
+      <maxX value="4698" />
+      <minY value="-4704" />
+      <maxY value="-4652" />
+      <fDampening value="0.15" />
+    </Item>
+    <Item>
+      <minX value="4618" />
+      <maxX value="4698" />
+      <minY value="-4754" />
+      <maxY value="-4704" />
+      <fDampening value="0.4" />
+    </Item>
+    <Item>
+      <minX value="4698" />
+      <maxX value="4900" />
+      <minY value="-4728" />
+      <maxY value="-4652" />
+      <fDampening value="0.1" />
+    </Item>
+    <Item>
+      <minX value="4646" />
+      <maxX value="4712" />
+      <minY value="-4754" />
+      <maxY value="-4728" />
+      <fDampening value="0.2" />
+    </Item>
+    <Item>
+      <minX value="4712" />
+      <maxX value="4740" />
+      <minY value="-4792" />
+      <maxY value="-4728" />
+      <fDampening value="0.2" />
+    </Item>
+    <Item>
+      <minX value="4784" />
+      <maxX value="4810" />
+      <minY value="-4752" />
+      <maxY value="-4716" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="4756" />
+      <maxX value="4792" />
+      <minY value="-4716" />
+      <maxY value="-4690" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="4584" />
+      <maxX value="4792" />
+      <minY value="-4666" />
+      <maxY value="-4650" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="4732" />
+      <maxX value="4792" />
+      <minY value="-4690" />
+      <maxY value="-4666" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="5196" />
+      <maxX value="5210" />
+      <minY value="-4688" />
+      <maxY value="-4634" />
+      <fDampening value="0.1" />
+    </Item>
+    <Item>
+      <minX value="5210" />
+      <maxX value="5224" />
+      <minY value="-4662" />
+      <maxY value="-4632" />
+      <fDampening value="0.2" />
+    </Item>
+    <Item>
+      <minX value="5210" />
+      <maxX value="5268" />
+      <minY value="-4676" />
+      <maxY value="-4636" />
+      <fDampening value="0.6" />
+    </Item>
+    <Item>
+      <minX value="4906" />
+      <maxX value="5004" />
+      <minY value="-4394" />
+      <maxY value="-4352" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="4830" />
+      <maxX value="4882" />
+      <minY value="-4424" />
+      <maxY value="-4352" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="3876" />
+      <maxX value="4002" />
+      <minY value="-4664" />
+      <maxY value="-4634" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="3832" />
+      <maxX value="3848" />
+      <minY value="-4756" />
+      <maxY value="-4666" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="5256" />
+      <maxX value="5398" />
+      <minY value="-4888" />
+      <maxY value="-4844" />
+      <fDampening value="0.6" />
+    </Item>
+    <Item>
+      <minX value="5356" />
+      <maxX value="5370" />
+      <minY value="-4894" />
+      <maxY value="-4862" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="5334" />
+      <maxX value="5384" />
+      <minY value="-4966" />
+      <maxY value="-4888" />
+      <fDampening value="0.6" />
+    </Item>
+    <Item>
+      <minX value="5204" />
+      <maxX value="5230" />
+      <minY value="-4608" />
+      <maxY value="-4568" />
+      <fDampening value="0.4" />
+    </Item>
+    <Item>
+      <minX value="5176" />
+      <maxX value="5204" />
+      <minY value="-4600" />
+      <maxY value="-4546" />
+      <fDampening value="0.4" />
+    </Item>
+    <Item>
+      <minX value="5150" />
+      <maxX value="5176" />
+      <minY value="-4598" />
+      <maxY value="-4526" />
+      <fDampening value="0.4" />
+    </Item>
+    <Item>
+      <minX value="5118" />
+      <maxX value="5150" />
+      <minY value="-4598" />
+      <maxY value="-4498" />
+      <fDampening value="0.4" />
+    </Item>
+    <Item>
+      <minX value="5004" />
+      <maxX value="5050" />
+      <minY value="-4500" />
+      <maxY value="-4376" />
+      <fDampening value="0.4" />
+    </Item>
+    <Item>
+      <minX value="5248" />
+      <maxX value="5276" />
+      <minY value="-4636" />
+      <maxY value="-4588" />
+      <fDampening value="0.5" />
+    </Item>
+    <Item>
+      <minX value="5072" />
+      <maxX value="5168" />
+      <minY value="-4680" />
+      <maxY value="-4580" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="5168" />
+      <maxX value="5180" />
+      <minY value="-4708" />
+      <maxY value="-4582" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="5224" />
+      <maxX value="5248" />
+      <minY value="-4642" />
+      <maxY value="-4606" />
+      <fDampening value="0.3" />
+    </Item>
+    <Item>
+      <minX value="5050" />
+      <maxX value="5118" />
+      <minY value="-4568" />
+      <maxY value="-4510" />
+      <fDampening value="0.2" />
+    </Item>
+    <Item>
+      <minX value="5050" />
+      <maxX value="5118" />
+      <minY value="-4510" />
+      <maxY value="-4450" />
+      <fDampening value="0.4" />
+    </Item>
+    <Item>
+      <minX value="5062" />
+      <maxX value="5096" />
+      <minY value="-4558" />
+      <maxY value="-4528" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="5096" />
+      <maxX value="5122" />
+      <minY value="-4574" />
+      <maxY value="-4544" />
+      <fDampening value="0.0" />
+    </Item>
+    <Item>
+      <minX value="5122" />
+      <maxX value="5144" />
+      <minY value="-4590" />
+      <maxY value="-4566" />
+      <fDampening value="0.0" />
+    </Item>
+  </CalmingQuads>
+  <WaveQuads>
+    <Item>
+      <minX value="5528" />
+      <maxX value="5616" />
+      <minY value="-5884" />
+      <maxY value="-5800" />
+      <Amplitude value="2.2" />
+      <XDirection value="-0.926529" />
+      <YDirection value="0.376224" />
+    </Item>
+    <Item>
+      <minX value="5540" />
+      <maxX value="5616" />
+      <minY value="-5800" />
+      <maxY value="-5672" />
+      <Amplitude value="2.2" />
+      <XDirection value="-0.984808" />
+      <YDirection value="-0.173648" />
+    </Item>
+    <Item>
+      <minX value="5508" />
+      <maxX value="5616" />
+      <minY value="-5652" />
+      <maxY value="-5504" />
+      <Amplitude value="2.0" />
+      <XDirection value="-0.984808" />
+      <YDirection value="-0.173648" />
+    </Item>
+    <Item>
+      <minX value="4484" />
+      <maxX value="4780" />
+      <minY value="-5068" />
+      <maxY value="-4968" />
+      <Amplitude value="1.4" />
+      <XDirection value="0.951057" />
+      <YDirection value="0.309017" />
+    </Item>
+    <Item>
+      <minX value="4792" />
+      <maxX value="4836" />
+      <minY value="-4900" />
+      <maxY value="-4744" />
+      <Amplitude value="1.0" />
+      <XDirection value="0.906308" />
+      <YDirection value="0.422618" />
+    </Item>
+    <Item>
+      <minX value="4356" />
+      <maxX value="4484" />
+      <minY value="-4684" />
+      <maxY value="-4584" />
+      <Amplitude value="1.2" />
+      <XDirection value="0.766044" />
+      <YDirection value="0.642788" />
+    </Item>
+    <Item>
+      <minX value="4268" />
+      <maxX value="4356" />
+      <minY value="-4684" />
+      <maxY value="-4584" />
+      <Amplitude value="1.2" />
+      <XDirection value="0.573576" />
+      <YDirection value="0.819152" />
+    </Item>
+    <Item>
+      <minX value="4200" />
+      <maxX value="4268" />
+      <minY value="-4684" />
+      <maxY value="-4600" />
+      <Amplitude value="1.2" />
+      <XDirection value="0.405142" />
+      <YDirection value="0.914254" />
+    </Item>
+    <Item>
+      <minX value="4104" />
+      <maxX value="4200" />
+      <minY value="-4684" />
+      <maxY value="-4628" />
+      <Amplitude value="1.0" />
+      <XDirection value="0.27228" />
+      <YDirection value="0.962218" />
+    </Item>
+    <Item>
+      <minX value="4484" />
+      <maxX value="4612" />
+      <minY value="-4968" />
+      <maxY value="-4740" />
+      <Amplitude value="1.2" />
+      <XDirection value="0.766044" />
+      <YDirection value="0.642788" />
+    </Item>
+    <Item>
+      <minX value="4504" />
+      <maxX value="4612" />
+      <minY value="-4740" />
+      <maxY value="-4680" />
+      <Amplitude value="1.0" />
+      <XDirection value="0.463296" />
+      <YDirection value="0.886204" />
+    </Item>
+    <Item>
+      <minX value="4336" />
+      <maxX value="4468" />
+      <minY value="-4396" />
+      <maxY value="-4308" />
+      <Amplitude value="1.2" />
+      <XDirection value="-0.111469" />
+      <YDirection value="-0.993768" />
+    </Item>
+    <Item>
+      <minX value="4468" />
+      <maxX value="4612" />
+      <minY value="-4416" />
+      <maxY value="-4308" />
+      <Amplitude value="1.2" />
+      <XDirection value="0.0" />
+      <YDirection value="-1.0" />
+    </Item>
+    <Item>
+      <minX value="4612" />
+      <maxX value="4720" />
+      <minY value="-4416" />
+      <maxY value="-4308" />
+      <Amplitude value="1.2" />
+      <XDirection value="0.466387" />
+      <YDirection value="-0.884581" />
+    </Item>
+    <Item>
+      <minX value="4852" />
+      <maxX value="5012" />
+      <minY value="-4412" />
+      <maxY value="-4296" />
+      <Amplitude value="1.4" />
+      <XDirection value="-0.528438" />
+      <YDirection value="-0.848972" />
+    </Item>
+    <Item>
+      <minX value="5012" />
+      <maxX value="5108" />
+      <minY value="-4532" />
+      <maxY value="-4348" />
+      <Amplitude value="1.4" />
+      <XDirection value="-0.563526" />
+      <YDirection value="-0.826098" />
+    </Item>
+    <Item>
+      <minX value="5108" />
+      <maxX value="5196" />
+      <minY value="-4592" />
+      <maxY value="-4416" />
+      <Amplitude value="1.4" />
+      <XDirection value="-0.457098" />
+      <YDirection value="-0.889416" />
+    </Item>
+    <Item>
+      <minX value="5196" />
+      <maxX value="5248" />
+      <minY value="-4608" />
+      <maxY value="-4532" />
+      <Amplitude value="1.4" />
+      <XDirection value="-0.236838" />
+      <YDirection value="-0.971549" />
+    </Item>
+    <Item>
+      <minX value="5196" />
+      <maxX value="5248" />
+      <minY value="-4532" />
+      <maxY value="-4416" />
+      <Amplitude value="1.2" />
+      <XDirection value="-0.315649" />
+      <YDirection value="-0.948876" />
+    </Item>
+    <Item>
+      <minX value="5108" />
+      <maxX value="5248" />
+      <minY value="-4416" />
+      <maxY value="-4348" />
+      <Amplitude value="1.2" />
+      <XDirection value="-0.474088" />
+      <YDirection value="-0.880477" />
+    </Item>
+    <Item>
+      <minX value="5168" />
+      <maxX value="5232" />
+      <minY value="-4916" />
+      <maxY value="-4804" />
+      <Amplitude value="1.2" />
+      <XDirection value="-0.793353" />
+      <YDirection value="-0.608761" />
+    </Item>
+    <Item>
+      <minX value="5568" />
+      <maxX value="5652" />
+      <minY value="-5180" />
+      <maxY value="-5112" />
+      <Amplitude value="2.0" />
+      <XDirection value="-0.790155" />
+      <YDirection value="-0.612907" />
+    </Item>
+    <Item>
+      <minX value="5080" />
+      <maxX value="5120" />
+      <minY value="-4668" />
+      <maxY value="-4620" />
+      <Amplitude value="1.0" />
+      <XDirection value="-0.697165" />
+      <YDirection value="0.716911" />
+    </Item>
+    <Item>
+      <minX value="5448" />
+      <maxX value="5488" />
+      <minY value="-5996" />
+      <maxY value="-5928" />
+      <Amplitude value="2.2" />
+      <XDirection value="-0.147809" />
+      <YDirection value="0.989016" />
+    </Item>
+    <Item>
+      <minX value="5488" />
+      <maxX value="5564" />
+      <minY value="-5984" />
+      <maxY value="-5928" />
+      <Amplitude value="2.2" />
+      <XDirection value="-0.610145" />
+      <YDirection value="0.79229" />
+    </Item>
+    <Item>
+      <minX value="5520" />
+      <maxX value="5588" />
+      <minY value="-5928" />
+      <maxY value="-5884" />
+      <Amplitude value="2.2" />
+      <XDirection value="-0.864275" />
+      <YDirection value="0.50302" />
+    </Item>
+    <Item>
+      <minX value="5424" />
+      <maxX value="5448" />
+      <minY value="-5996" />
+      <maxY value="-5920" />
+      <Amplitude value="2.0" />
+      <XDirection value="-0.0191981" />
+      <YDirection value="0.999816" />
+    </Item>
+    <Item>
+      <minX value="5348" />
+      <maxX value="5424" />
+      <minY value="-5980" />
+      <maxY value="-5888" />
+      <Amplitude value="2.2" />
+      <XDirection value="0.356737" />
+      <YDirection value="0.934205" />
+    </Item>
+    <Item>
+      <minX value="5616" />
+      <maxX value="5668" />
+      <minY value="-5532" />
+      <maxY value="-5460" />
+      <Amplitude value="2.2" />
+      <XDirection value="-0.987136" />
+      <YDirection value="0.159881" />
+    </Item>
+    <Item>
+      <minX value="5592" />
+      <maxX value="5668" />
+      <minY value="-5460" />
+      <maxY value="-5372" />
+      <Amplitude value="2.2" />
+      <XDirection value="-1.0" />
+      <YDirection value="0.0" />
+    </Item>
+    <Item>
+      <minX value="5532" />
+      <maxX value="5592" />
+      <minY value="-5468" />
+      <maxY value="-5408" />
+      <Amplitude value="1.8" />
+      <XDirection value="-0.988228" />
+      <YDirection value="-0.152986" />
+    </Item>
+    <Item>
+      <minX value="5600" />
+      <maxX value="5668" />
+      <minY value="-5372" />
+      <maxY value="-5292" />
+      <Amplitude value="2.2" />
+      <XDirection value="-0.994881" />
+      <YDirection value="0.101056" />
+    </Item>
+    <Item>
+      <minX value="5608" />
+      <maxX value="5688" />
+      <minY value="-5292" />
+      <maxY value="-5220" />
+      <Amplitude value="2.2" />
+      <XDirection value="-0.994881" />
+      <YDirection value="0.101056" />
+    </Item>
+    <Item>
+      <minX value="5500" />
+      <maxX value="5568" />
+      <minY value="-5192" />
+      <maxY value="-5112" />
+      <Amplitude value="2.0" />
+      <XDirection value="-0.788011" />
+      <YDirection value="-0.615661" />
+    </Item>
+    <Item>
+      <minX value="5284" />
+      <maxX value="5352" />
+      <minY value="-5036" />
+      <maxY value="-4976" />
+      <Amplitude value="2.0" />
+      <XDirection value="-0.927836" />
+      <YDirection value="-0.372988" />
+    </Item>
+    <Item>
+      <minX value="5296" />
+      <maxX value="5352" />
+      <minY value="-5080" />
+      <maxY value="-5036" />
+      <Amplitude value="2.0" />
+      <XDirection value="-0.753563" />
+      <YDirection value="-0.657375" />
+    </Item>
+    <Item>
+      <minX value="5300" />
+      <maxX value="5352" />
+      <minY value="-4976" />
+      <maxY value="-4884" />
+      <Amplitude value="1.5" />
+      <XDirection value="-0.843391" />
+      <YDirection value="-0.5373" />
+    </Item>
+    <Item>
+      <minX value="5352" />
+      <maxX value="5408" />
+      <minY value="-5104" />
+      <maxY value="-5048" />
+      <Amplitude value="2.0" />
+      <XDirection value="-0.627963" />
+      <YDirection value="-0.778243" />
+    </Item>
+    <Item>
+      <minX value="5408" />
+      <maxX value="5500" />
+      <minY value="-5120" />
+      <maxY value="-5052" />
+      <Amplitude value="2.0" />
+      <XDirection value="-0.622515" />
+      <YDirection value="-0.782608" />
+    </Item>
+    <Item>
+      <minX value="5352" />
+      <maxX value="5408" />
+      <minY value="-5048" />
+      <maxY value="-4924" />
+      <Amplitude value="1.0" />
+      <XDirection value="-0.843391" />
+      <YDirection value="-0.5373" />
+    </Item>
+    <Item>
+      <minX value="5500" />
+      <maxX value="5568" />
+      <minY value="-5112" />
+      <maxY value="-5052" />
+      <Amplitude value="2.0" />
+      <XDirection value="-0.789084" />
+      <YDirection value="-0.614285" />
+    </Item>
+    <Item>
+      <minX value="5408" />
+      <maxX value="5568" />
+      <minY value="-5052" />
+      <maxY value="-4856" />
+      <Amplitude value="1.0" />
+      <XDirection value="-0.855364" />
+      <YDirection value="-0.518027" />
+    </Item>
+    <Item>
+      <minX value="5568" />
+      <maxX value="5652" />
+      <minY value="-5112" />
+      <maxY value="-4980" />
+      <Amplitude value="1.0" />
+      <XDirection value="-0.783693" />
+      <YDirection value="-0.621148" />
+    </Item>
+    <Item>
+      <minX value="5592" />
+      <maxX value="5688" />
+      <minY value="-5220" />
+      <maxY value="-5180" />
+      <Amplitude value="2.1" />
+      <XDirection value="-0.942058" />
+      <YDirection value="-0.335451" />
+    </Item>
+    <Item>
+      <minX value="5652" />
+      <maxX value="5804" />
+      <minY value="-5324" />
+      <maxY value="-5084" />
+      <Amplitude value="1.0" />
+      <XDirection value="-0.939693" />
+      <YDirection value="-0.34202" />
+    </Item>
+    <Item>
+      <minX value="5616" />
+      <maxX value="5744" />
+      <minY value="-5748" />
+      <maxY value="-5532" />
+      <Amplitude value="1.4" />
+      <XDirection value="-0.999781" />
+      <YDirection value="-0.020942" />
+    </Item>
+    <Item>
+      <minX value="5668" />
+      <maxX value="5820" />
+      <minY value="-5532" />
+      <maxY value="-5324" />
+      <Amplitude value="1.2" />
+      <XDirection value="-1.0" />
+      <YDirection value="0.0" />
+    </Item>
+    <Item>
+      <minX value="5352" />
+      <maxX value="5408" />
+      <minY value="-4924" />
+      <maxY value="-4828" />
+      <Amplitude value="1.8" />
+      <XDirection value="-0.844328" />
+      <YDirection value="-0.535827" />
+    </Item>
+    <Item>
+      <minX value="5232" />
+      <maxX value="5300" />
+      <minY value="-4960" />
+      <maxY value="-4884" />
+      <Amplitude value="1.2" />
+      <XDirection value="-0.679442" />
+      <YDirection value="-0.733729" />
+    </Item>
+    <Item>
+      <minX value="5232" />
+      <maxX value="5352" />
+      <minY value="-4884" />
+      <maxY value="-4828" />
+      <Amplitude value="1.6" />
+      <XDirection value="-0.891006" />
+      <YDirection value="-0.453991" />
+    </Item>
+    <Item>
+      <minX value="5232" />
+      <maxX value="5300" />
+      <minY value="-4828" />
+      <maxY value="-4652" />
+      <Amplitude value="1.0" />
+      <XDirection value="-0.644125" />
+      <YDirection value="-0.76492" />
+    </Item>
+    <Item>
+      <minX value="5168" />
+      <maxX value="5232" />
+      <minY value="-4804" />
+      <maxY value="-4704" />
+      <Amplitude value="1.2" />
+      <XDirection value="-0.771624" />
+      <YDirection value="-0.636078" />
+    </Item>
+    <Item>
+      <minX value="5616" />
+      <maxX value="5708" />
+      <minY value="-5884" />
+      <maxY value="-5748" />
+      <Amplitude value="0.6" />
+      <XDirection value="-0.983885" />
+      <YDirection value="0.178802" />
+    </Item>
+    <Item>
+      <minX value="5564" />
+      <maxX value="5640" />
+      <minY value="-5984" />
+      <maxY value="-5884" />
+      <Amplitude value="1.2" />
+      <XDirection value="-0.894934" />
+      <YDirection value="0.446198" />
+    </Item>
+    <Item>
+      <minX value="5708" />
+      <maxX value="6124" />
+      <minY value="-5880" />
+      <maxY value="-5668" />
+      <Amplitude value="1.0" />
+      <XDirection value="-0.986572" />
+      <YDirection value="0.163326" />
+    </Item>
+    <Item>
+      <minX value="5744" />
+      <maxX value="6124" />
+      <minY value="-5664" />
+      <maxY value="-5248" />
+      <Amplitude value="1.0" />
+      <XDirection value="-1.0" />
+      <YDirection value="0.0" />
+    </Item>
+    <Item>
+      <minX value="5804" />
+      <maxX value="6132" />
+      <minY value="-5248" />
+      <maxY value="-4996" />
+      <Amplitude value="1.0" />
+      <XDirection value="-0.964095" />
+      <YDirection value="-0.265556" />
+    </Item>
+    <Item>
+      <minX value="5568" />
+      <maxX value="5804" />
+      <minY value="-5080" />
+      <maxY value="-4624" />
+      <Amplitude value="1.0" />
+      <XDirection value="-0.866025" />
+      <YDirection value="-0.5" />
+    </Item>
+    <Item>
+      <minX value="5300" />
+      <maxX value="5568" />
+      <minY value="-4856" />
+      <maxY value="-4624" />
+      <Amplitude value="1.0" />
+      <XDirection value="-0.866025" />
+      <YDirection value="-0.5" />
+    </Item>
+    <Item>
+      <minX value="5376" />
+      <maxX value="5604" />
+      <minY value="-6372" />
+      <maxY value="-6056" />
+      <Amplitude value="1.0" />
+      <XDirection value="-0.0871558" />
+      <YDirection value="0.996195" />
+    </Item>
+    <Item>
+      <minX value="5488" />
+      <maxX value="5604" />
+      <minY value="-6056" />
+      <maxY value="-5984" />
+      <Amplitude value="1.2" />
+      <XDirection value="-0.592013" />
+      <YDirection value="0.805928" />
+    </Item>
+    <Item>
+      <minX value="5376" />
+      <maxX value="5488" />
+      <minY value="-6056" />
+      <maxY value="-5980" />
+      <Amplitude value="1.2" />
+      <XDirection value="-0.0157074" />
+      <YDirection value="0.999877" />
+    </Item>
+    <Item>
+      <minX value="5604" />
+      <maxX value="6032" />
+      <minY value="-6312" />
+      <maxY value="-5880" />
+      <Amplitude value="1.0" />
+      <XDirection value="-0.790155" />
+      <YDirection value="0.612907" />
+    </Item>
+    <Item>
+      <minX value="5280" />
+      <maxX value="5348" />
+      <minY value="-5948" />
+      <maxY value="-5816" />
+      <Amplitude value="2.2" />
+      <XDirection value="0.0593057" />
+      <YDirection value="0.99824" />
+    </Item>
+    <Item>
+      <minX value="5204" />
+      <maxX value="5280" />
+      <minY value="-5888" />
+      <maxY value="-5784" />
+      <Amplitude value="2.2" />
+      <XDirection value="0.0331546" />
+      <YDirection value="0.99945" />
+    </Item>
+    <Item>
+      <minX value="5112" />
+      <maxX value="5204" />
+      <minY value="-5832" />
+      <maxY value="-5732" />
+      <Amplitude value="2.2" />
+      <XDirection value="-0.0296669" />
+      <YDirection value="0.99956" />
+    </Item>
+    <Item>
+      <minX value="5056" />
+      <maxX value="5112" />
+      <minY value="-5852" />
+      <maxY value="-5736" />
+      <Amplitude value="2.2" />
+      <XDirection value="-0.333807" />
+      <YDirection value="0.942641" />
+    </Item>
+    <Item>
+      <minX value="5000" />
+      <maxX value="5056" />
+      <minY value="-5888" />
+      <maxY value="-5788" />
+      <Amplitude value="2.2" />
+      <XDirection value="-0.546102" />
+      <YDirection value="0.837718" />
+    </Item>
+    <Item>
+      <minX value="5056" />
+      <maxX value="5204" />
+      <minY value="-5948" />
+      <maxY value="-5832" />
+      <Amplitude value="1.2" />
+      <XDirection value="-0.369747" />
+      <YDirection value="0.929132" />
+    </Item>
+    <Item>
+      <minX value="5056" />
+      <maxX value="5376" />
+      <minY value="-6164" />
+      <maxY value="-5948" />
+      <Amplitude value="1.0" />
+      <XDirection value="-0.253758" />
+      <YDirection value="0.967268" />
+    </Item>
+    <Item>
+      <minX value="5204" />
+      <maxX value="5280" />
+      <minY value="-5948" />
+      <maxY value="-5888" />
+      <Amplitude value="1.2" />
+      <XDirection value="-0.253758" />
+      <YDirection value="0.967268" />
+    </Item>
+    <Item>
+      <minX value="4988" />
+      <maxX value="5056" />
+      <minY value="-5948" />
+      <maxY value="-5888" />
+      <Amplitude value="2.2" />
+      <XDirection value="-0.692143" />
+      <YDirection value="0.72176" />
+    </Item>
+    <Item>
+      <minX value="4840" />
+      <maxX value="4988" />
+      <minY value="-5948" />
+      <maxY value="-5876" />
+      <Amplitude value="2.2" />
+      <XDirection value="-0.547563" />
+      <YDirection value="0.836764" />
+    </Item>
+    <Item>
+      <minX value="4816" />
+      <maxX value="4904" />
+      <minY value="-6056" />
+      <maxY value="-5948" />
+      <Amplitude value="2.2" />
+      <XDirection value="-0.5373" />
+      <YDirection value="0.843391" />
+    </Item>
+    <Item>
+      <minX value="4904" />
+      <maxX value="5056" />
+      <minY value="-6164" />
+      <maxY value="-5948" />
+      <Amplitude value="1.0" />
+      <XDirection value="-0.523986" />
+      <YDirection value="0.851727" />
+    </Item>
+    <Item>
+      <minX value="4692" />
+      <maxX value="4816" />
+      <minY value="-6056" />
+      <maxY value="-5948" />
+      <Amplitude value="2.2" />
+      <XDirection value="0.411514" />
+      <YDirection value="0.911404" />
+    </Item>
+    <Item>
+      <minX value="4660" />
+      <maxX value="4768" />
+      <minY value="-5948" />
+      <maxY value="-5800" />
+      <Amplitude value="2.2" />
+      <XDirection value="0.927184" />
+      <YDirection value="0.374607" />
+    </Item>
+    <Item>
+      <minX value="4500" />
+      <maxX value="4692" />
+      <minY value="-6056" />
+      <maxY value="-5900" />
+      <Amplitude value="1.2" />
+      <XDirection value="0.768283" />
+      <YDirection value="0.64011" />
+    </Item>
+    <Item>
+      <minX value="4612" />
+      <maxX value="4748" />
+      <minY value="-5800" />
+      <maxY value="-5652" />
+      <Amplitude value="2.2" />
+      <XDirection value="0.901077" />
+      <YDirection value="0.43366" />
+    </Item>
+    <Item>
+      <minX value="4432" />
+      <maxX value="4660" />
+      <minY value="-5900" />
+      <maxY value="-5748" />
+      <Amplitude value="1.2" />
+      <XDirection value="1.0" />
+      <YDirection value="0.0" />
+    </Item>
+    <Item>
+      <minX value="4584" />
+      <maxX value="4904" />
+      <minY value="-6264" />
+      <maxY value="-6056" />
+      <Amplitude value="1.4" />
+      <XDirection value="0.275637" />
+      <YDirection value="0.961262" />
+    </Item>
+    <Item>
+      <minX value="4612" />
+      <maxX value="4752" />
+      <minY value="-5652" />
+      <maxY value="-5528" />
+      <Amplitude value="2.1" />
+      <XDirection value="0.901077" />
+      <YDirection value="0.43366" />
+    </Item>
+    <Item>
+      <minX value="4668" />
+      <maxX value="4772" />
+      <minY value="-5528" />
+      <maxY value="-5444" />
+      <Amplitude value="2.0" />
+      <XDirection value="0.980614" />
+      <YDirection value="0.195947" />
+    </Item>
+    <Item>
+      <minX value="4732" />
+      <maxX value="4844" />
+      <minY value="-5444" />
+      <maxY value="-5360" />
+      <Amplitude value="1.8" />
+      <XDirection value="0.999998" />
+      <YDirection value="0.0017459" />
+    </Item>
+    <Item>
+      <minX value="4732" />
+      <maxX value="4852" />
+      <minY value="-5360" />
+      <maxY value="-5188" />
+      <Amplitude value="1.6" />
+      <XDirection value="0.973579" />
+      <YDirection value="0.228351" />
+    </Item>
+    <Item>
+      <minX value="4636" />
+      <maxX value="4744" />
+      <minY value="-5188" />
+      <maxY value="-5068" />
+      <Amplitude value="1.6" />
+      <XDirection value="0.908508" />
+      <YDirection value="0.417868" />
+    </Item>
+    <Item>
+      <minX value="4536" />
+      <maxX value="4732" />
+      <minY value="-5464" />
+      <maxY value="-5188" />
+      <Amplitude value="1.0" />
+      <XDirection value="0.908508" />
+      <YDirection value="0.417868" />
+    </Item>
+    <Item>
+      <minX value="4436" />
+      <maxX value="4612" />
+      <minY value="-5748" />
+      <maxY value="-5464" />
+      <Amplitude value="1.0" />
+      <XDirection value="0.953717" />
+      <YDirection value="0.300706" />
+    </Item>
+    <Item>
+      <minX value="4612" />
+      <maxX value="4668" />
+      <minY value="-5528" />
+      <maxY value="-5464" />
+      <Amplitude value="1.0" />
+      <XDirection value="0.908508" />
+      <YDirection value="0.417868" />
+    </Item>
+    <Item>
+      <minX value="4312" />
+      <maxX value="4536" />
+      <minY value="-5464" />
+      <maxY value="-5068" />
+      <Amplitude value="1.0" />
+      <XDirection value="0.920505" />
+      <YDirection value="0.390732" />
+    </Item>
+    <Item>
+      <minX value="4408" />
+      <maxX value="4484" />
+      <minY value="-4776" />
+      <maxY value="-4684" />
+      <Amplitude value="1.6" />
+      <XDirection value="0.766044" />
+      <YDirection value="0.642788" />
+    </Item>
+    <Item>
+      <minX value="3940" />
+      <maxX value="4044" />
+      <minY value="-4804" />
+      <maxY value="-4724" />
+      <Amplitude value="1.2" />
+      <XDirection value="0.34202" />
+      <YDirection value="0.939693" />
+    </Item>
+    <Item>
+      <minX value="3844" />
+      <maxX value="3940" />
+      <minY value="-4856" />
+      <maxY value="-4720" />
+      <Amplitude value="1.2" />
+      <XDirection value="0.34202" />
+      <YDirection value="0.939693" />
+    </Item>
+    <Item>
+      <minX value="3724" />
+      <maxX value="3844" />
+      <minY value="-4844" />
+      <maxY value="-4736" />
+      <Amplitude value="1.2" />
+      <XDirection value="0.78043" />
+      <YDirection value="0.625243" />
+    </Item>
+    <Item>
+      <minX value="3724" />
+      <maxX value="3848" />
+      <minY value="-4736" />
+      <maxY value="-4664" />
+      <Amplitude value="1.2" />
+      <XDirection value="0.999903" />
+      <YDirection value="0.0139621" />
+    </Item>
+    <Item>
+      <minX value="3752" />
+      <maxX value="3868" />
+      <minY value="-4664" />
+      <maxY value="-4552" />
+      <Amplitude value="1.2" />
+      <XDirection value="0.687088" />
+      <YDirection value="-0.726575" />
+    </Item>
+    <Item>
+      <minX value="4160" />
+      <maxX value="4408" />
+      <minY value="-4776" />
+      <maxY value="-4684" />
+      <Amplitude value="1.0" />
+      <XDirection value="0.580703" />
+      <YDirection value="0.814116" />
+    </Item>
+    <Item>
+      <minX value="4044" />
+      <maxX value="4320" />
+      <minY value="-4960" />
+      <maxY value="-4776" />
+      <Amplitude value="1.0" />
+      <XDirection value="0.580703" />
+      <YDirection value="0.814116" />
+    </Item>
+    <Item>
+      <minX value="3596" />
+      <maxX value="4044" />
+      <minY value="-5016" />
+      <maxY value="-4804" />
+      <Amplitude value="1.0" />
+      <XDirection value="0.580703" />
+      <YDirection value="0.814116" />
+    </Item>
+    <Item>
+      <minX value="3440" />
+      <maxX value="3724" />
+      <minY value="-4804" />
+      <maxY value="-4664" />
+      <Amplitude value="1.0" />
+      <XDirection value="0.999657" />
+      <YDirection value="0.0261774" />
+    </Item>
+    <Item>
+      <minX value="4612" />
+      <maxX value="4792" />
+      <minY value="-4740" />
+      <maxY value="-4664" />
+      <Amplitude value="1.0" />
+      <XDirection value="0.642788" />
+      <YDirection value="0.766044" />
+    </Item>
+    <Item>
+      <minX value="4536" />
+      <maxX value="4636" />
+      <minY value="-5188" />
+      <maxY value="-5068" />
+      <Amplitude value="1.8" />
+      <XDirection value="0.908508" />
+      <YDirection value="0.417868" />
+    </Item>
+    <Item>
+      <minX value="4320" />
+      <maxX value="4484" />
+      <minY value="-5068" />
+      <maxY value="-4776" />
+      <Amplitude value="1.0" />
+      <XDirection value="0.650774" />
+      <YDirection value="0.759272" />
+    </Item>
+    <Item>
+      <minX value="4720" />
+      <maxX value="4792" />
+      <minY value="-4968" />
+      <maxY value="-4876" />
+      <Amplitude value="1.0" />
+      <XDirection value="0.908508" />
+      <YDirection value="0.417868" />
+    </Item>
+    <Item>
+      <minX value="4612" />
+      <maxX value="4720" />
+      <minY value="-4968" />
+      <maxY value="-4876" />
+      <Amplitude value="1.2" />
+      <XDirection value="0.642788" />
+      <YDirection value="0.766044" />
+    </Item>
+    <Item>
+      <minX value="4612" />
+      <maxX value="4792" />
+      <minY value="-4876" />
+      <maxY value="-4740" />
+      <Amplitude value="1.2" />
+      <XDirection value="0.642788" />
+      <YDirection value="0.766044" />
+    </Item>
+    <Item>
+      <minX value="4100" />
+      <maxX value="4240" />
+      <minY value="-4296" />
+      <maxY value="-4168" />
+      <Amplitude value="1.2" />
+      <XDirection value="0.543174" />
+      <YDirection value="-0.83962" />
+    </Item>
+    <Item>
+      <minX value="4240" />
+      <maxX value="4424" />
+      <minY value="-4308" />
+      <maxY value="-4156" />
+      <Amplitude value="1.4" />
+      <XDirection value="0.130526" />
+      <YDirection value="-0.991445" />
+    </Item>
+    <Item>
+      <minX value="4656" />
+      <maxX value="4772" />
+      <minY value="-4308" />
+      <maxY value="-4204" />
+      <Amplitude value="1.3" />
+      <XDirection value="0.289032" />
+      <YDirection value="-0.957319" />
+    </Item>
+    <Item>
+      <minX value="4772" />
+      <maxX value="4920" />
+      <minY value="-4296" />
+      <maxY value="-4196" />
+      <Amplitude value="1.4" />
+      <XDirection value="-0.180519" />
+      <YDirection value="-0.983571" />
+    </Item>
+    <Item>
+      <minX value="4424" />
+      <maxX value="4656" />
+      <minY value="-4308" />
+      <maxY value="-4148" />
+      <Amplitude value="1.0" />
+      <XDirection value="0.0575638" />
+      <YDirection value="-0.998342" />
+    </Item>
+    <Item>
+      <minX value="3640" />
+      <maxX value="3872" />
+      <minY value="-4552" />
+      <maxY value="-4372" />
+      <Amplitude value="1.0" />
+      <XDirection value="0.642787" />
+      <YDirection value="-0.766045" />
+    </Item>
+    <Item>
+      <minX value="4920" />
+      <maxX value="5244" />
+      <minY value="-4348" />
+      <maxY value="-4096" />
+      <Amplitude value="1.0" />
+      <XDirection value="-0.541708" />
+      <YDirection value="-0.840567" />
+    </Item>
+    <Item>
+      <minX value="4656" />
+      <maxX value="4920" />
+      <minY value="-4204" />
+      <maxY value="-4012" />
+      <Amplitude value="1.0" />
+      <XDirection value="-0.0157072" />
+      <YDirection value="-0.999877" />
+    </Item>
+    <Item>
+      <minX value="3868" />
+      <maxX value="4092" />
+      <minY value="-4636" />
+      <maxY value="-4532" />
+      <Amplitude value="1.2" />
+      <XDirection value="0.704634" />
+      <YDirection value="-0.709571" />
+    </Item>
+    <Item>
+      <minX value="4004" />
+      <maxX value="4160" />
+      <minY value="-4532" />
+      <maxY value="-4416" />
+      <Amplitude value="1.2" />
+      <XDirection value="0.830012" />
+      <YDirection value="-0.557745" />
+    </Item>
+    <Item>
+      <minX value="4048" />
+      <maxX value="4192" />
+      <minY value="-4416" />
+      <maxY value="-4296" />
+      <Amplitude value="1.2" />
+      <XDirection value="0.830012" />
+      <YDirection value="-0.557745" />
+    </Item>
+    <Item>
+      <minX value="3532" />
+      <maxX value="3752" />
+      <minY value="-4664" />
+      <maxY value="-4552" />
+      <Amplitude value="1.0" />
+      <XDirection value="0.931056" />
+      <YDirection value="-0.364877" />
+    </Item>
+    <Item>
+      <minX value="3872" />
+      <maxX value="4048" />
+      <minY value="-4532" />
+      <maxY value="-4340" />
+      <Amplitude value="1.0" />
+      <XDirection value="0.741976" />
+      <YDirection value="-0.670427" />
+    </Item>
+    <Item>
+      <minX value="3888" />
+      <maxX value="4096" />
+      <minY value="-4340" />
+      <maxY value="-4164" />
+      <Amplitude value="1.0" />
+      <XDirection value="0.820152" />
+      <YDirection value="-0.572146" />
+    </Item>
+    <Item>
+      <minX value="4100" />
+      <maxX value="4368" />
+      <minY value="-4168" />
+      <maxY value="-4008" />
+      <Amplitude value="1.0" />
+      <XDirection value="0.139173" />
+      <YDirection value="-0.990268" />
+    </Item>
+    <Item>
+      <minX value="5248" />
+      <maxX value="5300" />
+      <minY value="-4652" />
+      <maxY value="-4556" />
+      <Amplitude value="1.5" />
+      <XDirection value="-0.457099" />
+      <YDirection value="-0.889416" />
+    </Item>
+    <Item>
+      <minX value="5184" />
+      <maxX value="5248" />
+      <minY value="-4704" />
+      <maxY value="-4620" />
+      <Amplitude value="1.2" />
+      <XDirection value="-0.623881" />
+      <YDirection value="-0.78152" />
+    </Item>
+    <Item>
+      <minX value="5300" />
+      <maxX value="5504" />
+      <minY value="-4624" />
+      <maxY value="-4556" />
+      <Amplitude value="1.0" />
+      <XDirection value="-0.786936" />
+      <YDirection value="-0.617034" />
+    </Item>
+    <Item>
+      <minX value="5248" />
+      <maxX value="5480" />
+      <minY value="-4556" />
+      <maxY value="-4368" />
+      <Amplitude value="1.0" />
+      <XDirection value="-0.726576" />
+      <YDirection value="-0.687086" />
+    </Item>
+    <Item>
+      <minX value="5120" />
+      <maxX value="5168" />
+      <minY value="-4676" />
+      <maxY value="-4624" />
+      <Amplitude value="1.0" />
+      <XDirection value="-0.474089" />
+      <YDirection value="0.880477" />
+    </Item>
+    <Item>
+      <minX value="5124" />
+      <maxX value="5168" />
+      <minY value="-4864" />
+      <maxY value="-4720" />
+      <Amplitude value="1.1" />
+      <XDirection value="-0.766044" />
+      <YDirection value="-0.642788" />
+    </Item>
+    <Item>
+      <minX value="5124" />
+      <maxX value="5168" />
+      <minY value="-4720" />
+      <maxY value="-4676" />
+      <Amplitude value="1.0" />
+      <XDirection value="-0.474089" />
+      <YDirection value="0.880477" />
+    </Item>
+    <Item>
+      <minX value="4744" />
+      <maxX value="4836" />
+      <minY value="-5188" />
+      <maxY value="-5060" />
+      <Amplitude value="1.2" />
+      <XDirection value="0.938493" />
+      <YDirection value="0.345298" />
+    </Item>
+    <Item>
+      <minX value="4836" />
+      <maxX value="4880" />
+      <minY value="-5180" />
+      <maxY value="-5116" />
+      <Amplitude value="1.0" />
+      <XDirection value="0.991894" />
+      <YDirection value="0.127065" />
+    </Item>
+    <Item>
+      <minX value="4880" />
+      <maxX value="4976" />
+      <minY value="-5148" />
+      <maxY value="-5100" />
+      <Amplitude value="1.0" />
+      <XDirection value="0.858065" />
+      <YDirection value="0.513542" />
+    </Item>
+    <Item>
+      <minX value="4880" />
+      <maxX value="4976" />
+      <minY value="-5200" />
+      <maxY value="-5148" />
+      <Amplitude value="1.0" />
+      <XDirection value="0.942641" />
+      <YDirection value="-0.333807" />
+    </Item>
+    <Item>
+      <minX value="4912" />
+      <maxX value="4952" />
+      <minY value="-5100" />
+      <maxY value="-5036" />
+      <Amplitude value="1.0" />
+      <XDirection value="0.529919" />
+      <YDirection value="0.848048" />
+    </Item>
+    <Item>
+      <minX value="4952" />
+      <maxX value="5056" />
+      <minY value="-5084" />
+      <maxY value="-5032" />
+      <Amplitude value="1.0" />
+      <XDirection value="0.995056" />
+      <YDirection value="0.09932" />
+    </Item>
+    <Item>
+      <minX value="5056" />
+      <maxX value="5128" />
+      <minY value="-5104" />
+      <maxY value="-5032" />
+      <Amplitude value="1.0" />
+      <XDirection value="0.841511" />
+      <YDirection value="-0.54024" />
+    </Item>
+    <Item>
+      <minX value="5072" />
+      <maxX value="5120" />
+      <minY value="-5264" />
+      <maxY value="-5104" />
+      <Amplitude value="1.0" />
+      <XDirection value="0.0" />
+      <YDirection value="-1.0" />
+    </Item>
+    <Item>
+      <minX value="4044" />
+      <maxX value="4160" />
+      <minY value="-4776" />
+      <maxY value="-4684" />
+      <Amplitude value="1.2" />
+      <XDirection value="0.34202" />
+      <YDirection value="0.939693" />
+    </Item>
+    <Item>
+      <minX value="4792" />
+      <maxX value="4904" />
+      <minY value="-5024" />
+      <maxY value="-4900" />
+      <Amplitude value="1.0" />
+      <XDirection value="0.999998" />
+      <YDirection value="-0.00174543" />
+    </Item>
+    <Item>
+      <minX value="4836" />
+      <maxX value="4912" />
+      <minY value="-4868" />
+      <maxY value="-4744" />
+      <Amplitude value="1.0" />
+      <XDirection value="0.990268" />
+      <YDirection value="0.139173" />
+    </Item>
+    <Item>
+      <minX value="5596" />
+      <maxX value="5646" />
+      <minY value="-5684" />
+      <maxY value="-5630" />
+      <Amplitude value="2.2" />
+      <XDirection value="-1.0" />
+      <YDirection value="0.0" />
+    </Item>
+  </WaveQuads>
+</WaterData>

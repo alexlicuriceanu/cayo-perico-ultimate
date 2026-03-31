@@ -29,3 +29,12 @@ config.dynamic_path_nodes = true   -- dynamically enable/disable path nodes when
 config.dynamic_actions_delay = 3000 -- delay in ms for updating path nodes state and wave scaler
 
 config.dynamic_waves = true          -- dynamically enable/disable waves when entering/exiting Cayo Perico
+
+-- [*] If you're using the LS-Removed resource, set this to nil and configure water from there.
+
+config.custom_water_name = 'cayo_water' -- 'cayo_water' -- specify a water entry to load or nil to disable
+config.custom_water = {
+    ['cayo_water'] = {
+        resource_name = GetCurrentResourceName(), path = 'data/water_ls_cayo.xml', global_water_type = 1, deep_ocean_scaler = 0.0
+    },
+}
