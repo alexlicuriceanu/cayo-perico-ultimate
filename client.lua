@@ -127,6 +127,8 @@ Citizen.CreateThread(function()
             if config.dynamic_waves then
                 SetDeepOceanScaler(0.0)
             end
+
+            LoadGlobalWaterType(1)
         else
             if config.dynamic_path_nodes then
                 SetAiGlobalPathNodesType(0)
@@ -135,6 +137,8 @@ Citizen.CreateThread(function()
             if config.dynamic_waves then
                 SetDeepOceanScaler(config.dynamic_waves_scaler)
             end
+
+            LoadGlobalWaterType(0)
         end
 
         Citizen.Wait(config.dynamic_actions_delay)
@@ -151,9 +155,9 @@ Citizen.CreateThread(function()
         Citizen.Wait(0)
     end
 
-    -- disable arena wars emitters
-    SetStaticEmitterEnabled('SE_DLC_AW_ARENA_CONSTRUCTION_01', config.disable_emitters or false)
-    SetStaticEmitterEnabled('SE_DLC_AW_ARENA_CROWD_BACKGROUND_MAIN', config.disable_emitters or false)
-    SetStaticEmitterEnabled('SE_DLC_AW_CROWD_EXTERIOR_LOBBY', config.disable_emitters or false)
-    SetStaticEmitterEnabled('SE_DLC_AW_CROWD_INTERIOR_LOBBY', config.disable_emitters or false)
+    SetStaticEmitterEnabled('se_dlc_aw_arena_construction_01', not config.disable_emitters)
+    SetStaticEmitterEnabled('se_dlc_aw_arena_crowd_background_main', not config.disable_emitters)
+    SetStaticEmitterEnabled('se_dlc_aw_crowd_exterior_lobby', not config.disable_emitters)
+    SetStaticEmitterEnabled('se_dlc_aw_crowd_interior_lobby', not config.disable_emitters)
+
 end)

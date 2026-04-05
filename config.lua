@@ -35,7 +35,7 @@ config.dynamic_waves_scaler = 1.0   -- wave scaler values when the player is not
 config.custom_water_name = 'cayo_water' -- specify a water entry to load from the table below or nil to disable
 config.custom_water = {
     ['cayo_water'] = {
-        resource_name = GetCurrentResourceName(), path = 'data/water_ls_cayo.xml', global_water_type = 1, deep_ocean_scaler = 0.0
+        resource_name = GetCurrentResourceName(), path = 'data/water_cayo.xml', global_water_type = 1, deep_ocean_scaler = 0.0
     },
 
     -- Other example
