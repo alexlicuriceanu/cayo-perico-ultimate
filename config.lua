@@ -38,10 +38,14 @@ config.custom_water = {
         resource_name = GetCurrentResourceName(), path = 'data/water_cayo.xml', global_water_type = 1, deep_ocean_scaler = 0.0
     },
 
-    -- Other example
+    -- Other examples
     -- ['custom_water_2'] = {
     --     resource_name = 'other_resource_name', path = 'path/to/water.xml', global_water_type = 1, deep_ocean_scaler = 0.0
-    -- }
+    -- },
+
+    -- ['ls_cayo_water'] = {
+    --     resource_name = GetCurrentResourceName(), path = 'data/water_ls_cayo.xml', deep_ocean_scaler = 0.0, global_water_type = 1
+    -- },
 }
 
 config.dynamic_actions_delay = 3000 -- delay in ms for updating path nodes state and wave scaler; 3000 should be perfectly fine
