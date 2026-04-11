@@ -5,12 +5,15 @@ author 'L1CKS'
 description 'Lightweight, powerful and customizable Cayo Perico loader'
 version '1.0.0'
 
+files {
+    'data/*.xml'
+}
+
 client_scripts {
     "client.lua",
     "ipls.lua",
     "config.lua",
-    "utils.lua",
-	"data/*.xml"
+    "utils.lua"
 }
 
 this_is_a_map 'yes'
