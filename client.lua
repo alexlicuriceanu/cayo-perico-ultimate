@@ -28,6 +28,7 @@ Citizen.CreateThread(function()
     enable_ipl_subset('gate_closed', config.gate_open == false)
     enable_ipl_subset('hangar_open', config.hangar_open)
     enable_ipl_subset('hangar_closed', config.hangar_open == false)
+    enable_ipl_subset('drug_plants', config.drug_plants)
 
 
     -- misc natives
@@ -146,6 +147,13 @@ Citizen.CreateThread(function()
 end)
 
 
+local function disable_emitters(_disable)
+    SetStaticEmitterEnabled('se_dlc_aw_arena_construction_01', not _disable)
+    SetStaticEmitterEnabled('se_dlc_aw_arena_crowd_background_main', not _disable)
+    SetStaticEmitterEnabled('se_dlc_aw_crowd_exterior_lobby', not _disable)
+    SetStaticEmitterEnabled('se_dlc_aw_crowd_interior_lobby', not _disable)
+end
+
 Citizen.CreateThread(function()
     if not config.cayo_perico then
         return
@@ -155,9 +163,30 @@ Citizen.CreateThread(function()
         Citizen.Wait(0)
     end
 
-    SetStaticEmitterEnabled('se_dlc_aw_arena_construction_01', not config.disable_emitters)
-    SetStaticEmitterEnabled('se_dlc_aw_arena_crowd_background_main', not config.disable_emitters)
-    SetStaticEmitterEnabled('se_dlc_aw_crowd_exterior_lobby', not config.disable_emitters)
-    SetStaticEmitterEnabled('se_dlc_aw_crowd_interior_lobby', not config.disable_emitters)
+    disable_emitters(config.disable_emitters)
 
+end)
+
+AddEventHandler('onResourceStop', function(resourceName)
+    if GetCurrentResourceName() ~= resourceName then
+       return
+    end
+
+    if not config.cayo_perico then
+        return
+    end
+
+    SetUseIslandMap(false)
+
+    if dummy_blip then
+        RemoveBlip(dummy_blip)
+    end
+
+    _keys = get_keys(_cayo_ipls)
+
+    for _, ipl_subset in pairs(_keys) do
+        enable_ipl_subset(ipl_subset, false)
+    end
+
+    disable_emitters(false)
 end)

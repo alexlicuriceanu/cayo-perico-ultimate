@@ -17,6 +17,7 @@ config.underwater_gate_closed = false   -- true = underwater gate closed; false 
 config.sea_mines = false  -- true = enable sea mines, false = disable sea mines
 config.shark = true         -- true = enable dead shark, false = disable dead shark
 config.whale = true          -- true = enable beached whale, false = disable beached whale 
+config.drug_plants = false      -- true = enable drug plants, false = disable drug plants; set to false for better performance in the dock area
 
 -- Minimap options
 --[[
