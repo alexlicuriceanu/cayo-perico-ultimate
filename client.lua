@@ -1,8 +1,10 @@
-local cayo_perico_coords = vector3(4700.0, -5150.0, 0.0)
-local cayo_perico_radius = 1500.0
+local cayo_perico_coords = vector3(4700.0, -5150.0, 0.0)    -- island center coordinates
+local cayo_perico_radius = 1500.0   -- distance from the center of the island to the farthest point
 
-local dummy_blip = nil
-local dummy_blip_coords = vector3(5721.93, -6051.38, 0.0)
+local dummy_blip = nil      -- minimap bounds dummy blip handle
+local dummy_blip_coords = vector3(5721.93, -6051.38, 0.0)   -- dummy blip coordinates (bottom right corner of the minimap)
+
+local custom_water_loaded = false
 
 local function enable_ipl_subset(ipl_subset, enable)
     for _, ipl in pairs(_cayo_ipls[ipl_subset]) do
@@ -14,9 +16,42 @@ local function enable_ipl_subset(ipl_subset, enable)
     end
 end
 
+-- function that loads the water file specified in the config
+local function load_custom_water()
+    local custom_water_name = config.custom_water_name
+    local custom_water_resource_name = config.custom_water[custom_water_name].resource_name
+    local custom_water_path = config.custom_water[custom_water_name].path
+    local global_water_type = config.custom_water[custom_water_name].global_water_type
+    local deep_ocean_scaler = config.custom_water[custom_water_name].deep_ocean_scaler
+
+    LoadWaterFromPath(custom_water_resource_name, custom_water_path)
+    LoadGlobalWaterType(global_water_type)
+    SetDeepOceanScaler(deep_ocean_scaler)
+end
+
+local function load_ls_water()
+    LoadGlobalWaterType(0)
+    SetDeepOceanScaler(config.dynamic_waves and config.dynamic_waves_scaler or 0.0)
+end
+
+local function load_cayo_perico_water()
+    LoadGlobalWaterType(1)
+    SetDeepOceanScaler(0.0)
+end
+
+local function disable_emitters(_disable)
+    SetStaticEmitterEnabled('se_dlc_aw_arena_construction_01', not _disable)
+    SetStaticEmitterEnabled('se_dlc_aw_arena_crowd_background_main', not _disable)
+    SetStaticEmitterEnabled('se_dlc_aw_crowd_exterior_lobby', not _disable)
+    SetStaticEmitterEnabled('se_dlc_aw_crowd_interior_lobby', not _disable)
+end
+
+--[[
+    Main thread
+]]
 Citizen.CreateThread(function()
-    if not config.cayo_perico then
-        return
+    while not NetworkIsSessionStarted() do
+        Citizen.Wait(0)
     end
 
     -- load cayo perico ipls
@@ -46,6 +81,8 @@ Citizen.CreateThread(function()
     SetAmbientZoneListStatePersistent('AZL_DLC_Hei4_Island_Zones', config.ambient_zone or true, true)
     SetAmbientZoneListStatePersistent('AZL_DLC_Hei4_Island_Disabled_Zones', not config.ambient_zone or false, true)
 
+    disable_emitters(config.disable_emitters)
+
     -- vault entity set
     local vault_interior_id = 280065
 
@@ -59,25 +96,13 @@ Citizen.CreateThread(function()
         DeactivateInteriorEntitySet(vault_interior_id, 'panther_set')
         RefreshInterior(vault_interior_id)
     end
-
-
-    -- handle loading custom water
-    if config.custom_water_name and config.custom_water[config.custom_water_name] then
-        local custom_water_name = config.custom_water_name
-        local custom_water = config.custom_water[custom_water_name]
-        
-        LoadWaterFromPath(custom_water.resource_name, custom_water.path)
-        LoadGlobalWaterType(custom_water.global_water_type)
-        SetDeepOceanScaler(custom_water.deep_ocean_scaler)
-    end
 end)
 
 
+--[[
+    Minimap thread
+]]
 Citizen.CreateThread(function()
-    if not config.cayo_perico then
-        return
-    end
-
     SetUseIslandMap(false)
 
     if config.minimap_type == 'off' then
@@ -102,78 +127,57 @@ Citizen.CreateThread(function()
         SetRadarAsInteriorThisFrame(hash, x, y, z, 0)
         Citizen.Wait(0)
     end
-
 end)
 
+--[[
+    Water thread
+]]
 Citizen.CreateThread(function()
-    if not config.cayo_perico then
-        return
-    end
-
-    if not config.dynamic_path_nodes and not config.dynamic_waves then
-        return
-    end
-
     while true do
-        local ped = PlayerPedId()
-        local coords = GetEntityCoords(ped)
-
-        local distance = #(coords - cayo_perico_coords)
-
-        if distance < cayo_perico_radius then
-            if config.dynamic_path_nodes then
-                SetAiGlobalPathNodesType(1)
-            end
-
-            if config.dynamic_waves then
-                SetDeepOceanScaler(0.0)
-            end
-
-            LoadGlobalWaterType(1)
-        else
-            if config.dynamic_path_nodes then
-                SetAiGlobalPathNodesType(0)
-            end
-
-            if config.dynamic_waves then
-                SetDeepOceanScaler(config.dynamic_waves_scaler)
-            end
-
-            LoadGlobalWaterType(0)
-        end
-
         Citizen.Wait(config.dynamic_actions_delay)
+
+        local ped = PlayerPedId()
+
+        if DoesEntityExist(ped) and not IsEntityDead(ped) then
+            local coords = GetEntityCoords(ped)
+
+            local distance = #(coords - cayo_perico_coords)
+
+            if distance > cayo_perico_radius then
+                -- handle water
+                if not custom_water_loaded then
+                    if config.custom_water_name then
+                        load_custom_water()
+                    else
+                        load_ls_water()
+                    end
+
+                    custom_water_loaded = true
+                end
+
+                -- handle path nodes
+                if config.dynamic_path_nodes then
+                    SetAiGlobalPathNodesType(0)
+                end
+            else
+                -- handle water
+                if custom_water_loaded then
+                    load_cayo_perico_water()
+                    custom_water_loaded = false
+                end
+
+                -- handle path nodes
+                if config.dynamic_path_nodes then
+                    SetAiGlobalPathNodesType(1)
+                end
+            end
+        end
     end
-end)
-
-
-local function disable_emitters(_disable)
-    SetStaticEmitterEnabled('se_dlc_aw_arena_construction_01', not _disable)
-    SetStaticEmitterEnabled('se_dlc_aw_arena_crowd_background_main', not _disable)
-    SetStaticEmitterEnabled('se_dlc_aw_crowd_exterior_lobby', not _disable)
-    SetStaticEmitterEnabled('se_dlc_aw_crowd_interior_lobby', not _disable)
-end
-
-Citizen.CreateThread(function()
-    if not config.cayo_perico then
-        return
-    end
-
-    while not NetworkIsSessionStarted() do
-        Citizen.Wait(0)
-    end
-
-    disable_emitters(config.disable_emitters)
-
 end)
 
 AddEventHandler('onResourceStop', function(resourceName)
     if GetCurrentResourceName() ~= resourceName then
        return
-    end
-
-    if not config.cayo_perico then
-        return
     end
 
     SetUseIslandMap(false)

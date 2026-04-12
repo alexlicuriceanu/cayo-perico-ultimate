@@ -1,7 +1,5 @@
 config = {}
 
-config.cayo_perico = true   -- Master switch for Cayo Perico, if this is false, the resource will do nothing
-
 -- Misc options
 config.disable_prologue_snow = true -- true = disable snow from North Yankton, false = enable snow
 config.disable_emitters = true -- true = disable arena wars emitters, false = enable emitters; set this to false if other scripts interact with emitters
@@ -33,10 +31,10 @@ config.dynamic_path_nodes = true   -- true = dynamically enable/disable GPS path
 config.dynamic_waves = true -- true = dynamically change wave intensity when entering/exiting Cayo Perico, false = default wave intensity on Cayo Perico
 config.dynamic_waves_scaler = 1.0   -- wave scaler values when the player is not near Cayo Perico, only used if dynamic_waves is true
 
-config.custom_water_name = 'cayo_water' -- specify a water entry to load from the table below or nil to disable
+config.custom_water_name = nil -- specify a water entry to load from the table below or nil to disable
 config.custom_water = {
-    ['cayo_water'] = {
-        resource_name = GetCurrentResourceName(), path = 'data/water_cayo.xml', global_water_type = 1, deep_ocean_scaler = 0.0
+    ['ls_removed_water'] = {
+        resource_name = 'ls-removed', path = 'data/water_ls_cayo.xml', global_water_type = 0, deep_ocean_scaler = 0.0
     },
 
     -- Other examples
