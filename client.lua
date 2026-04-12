@@ -166,6 +166,12 @@ Citizen.CreateThread(function()
                     custom_water_loaded = false
                 end
 
+                -- fallback, temporary implementation; FIXME
+                if GetGlobalWaterType() ~= 1 then
+                    load_cayo_perico_water()
+                    custom_water_loaded = false
+                end
+
                 -- handle path nodes
                 if config.dynamic_path_nodes then
                     SetAiGlobalPathNodesType(1)
