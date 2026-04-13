@@ -145,10 +145,18 @@ Citizen.CreateThread(function()
         global_ai_path_nodes = 0
     end
 
-    -- handle static water if dynamic_water is false, then exit
+    -- handle static water if dynamic_water is false
     if not config.dynamic_water then
         LoadGlobalWaterType(config.static_water_type)
+    end
+
+    -- handle static waves scaler if dynamic_waves is false
+    if not config.dynamic_waves then
         SetDeepOceanScaler(config.static_waves_scaler * 1.0)
+    end
+
+    -- optimization: early exit if loop doesn't need to run
+    if not config.dynamic_path_nodes and not config.dynamic_water and not config.dynamic_waves then
         return
     end
 
