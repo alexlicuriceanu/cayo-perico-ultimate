@@ -169,7 +169,7 @@ Citizen.CreateThread(function()
 
             if distance > cayo_perico_radius then
                 -- handle water
-                if GetGlobalWaterType() == 1 and config.dynamic_water then
+                if config.dynamic_water and GetGlobalWaterType() == 1 then
                     load_ls_water()
                 end
 
@@ -185,7 +185,7 @@ Citizen.CreateThread(function()
                 end
             else
                 -- handle water
-                if GetGlobalWaterType() == 0 and config.dynamic_water then
+                if config.dynamic_water and GetGlobalWaterType() == 0 then
                     load_cayo_perico_water()
                 end
 
