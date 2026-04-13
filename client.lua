@@ -64,14 +64,14 @@ Citizen.CreateThread(function()
     enable_ipl_subset('drug_plants', config.drug_plants)
 
     -- disable snow from North Yankton
-    SetZoneEnabled(GetZoneFromNameId("PrLog"), not config.disable_prologue_snow or false)
+    SetZoneEnabled(GetZoneFromNameId("PrLog"), not config.disable_prologue_snow)
     -- enable/disable peds on the island
-    SetScenarioGroupEnabled('Heist_Island_Peds', config.peds or true)
+    SetScenarioGroupEnabled('Heist_Island_Peds', config.peds)
 
     -- enable ambient sounds
     SetAudioFlag('PlayerOnDLCHeist4Island', config.disable_radio)
-    SetAmbientZoneListStatePersistent('AZL_DLC_Hei4_Island_Zones', config.ambient_zone or true, true)
-    SetAmbientZoneListStatePersistent('AZL_DLC_Hei4_Island_Disabled_Zones', not config.ambient_zone or false, true)
+    SetAmbientZoneListStatePersistent('AZL_DLC_Hei4_Island_Zones', config.ambient_zone, true)
+    SetAmbientZoneListStatePersistent('AZL_DLC_Hei4_Island_Disabled_Zones', not config.ambient_zone, true)
 
     -- disable arena wars emitters
     disable_emitters(config.disable_emitters)
