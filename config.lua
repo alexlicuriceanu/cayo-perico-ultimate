@@ -24,27 +24,16 @@ config.drug_plants = false      -- true = enable drug plants, false = disable dr
     https://forum.cfx.re/t/release-extra-map-tiles-v2-add-extra-textured-tiles-on-the-pause-menu-map-and-minimap-new-and-revamped-version
 ]]
 config.minimap_type = 'off' -- options: 'compact', 'scaleform', 'off'
-config.gps = true   -- true = enable GPS routes on Cayo Perico, false = disable GPS routes on Cayo Perico; [*] Setting this to true will disable LS GPS routes
-config.dynamic_path_nodes = true   -- true = dynamically enable/disable GPS path nodes when entering/exiting Cayo Perico, false = no GPS path nodes on Cayo Perico
+config.dynamic_path_nodes = false   -- true = dynamically enable/disable GPS path nodes when entering/exiting Cayo Perico, false = no GPS path nodes on Cayo Perico
 
--- Water options
-config.dynamic_waves = true -- true = dynamically change wave intensity when entering/exiting Cayo Perico, false = default wave intensity on Cayo Perico
+-- true = dynamically load custom water when entering/exiting Cayo Perico, false = default water on Cayo Perico;
+-- setting dynamic_water to false will not apply the Cayo Perico water textures
+config.dynamic_water = true
 config.dynamic_waves_scaler = 1.0   -- wave scaler values when the player is not near Cayo Perico, only used if dynamic_waves is true
 
-config.custom_water_name = nil -- specify a water entry to load from the table below or nil to disable
-config.custom_water = {
-    ['ls_removed_water'] = {
-        resource_name = 'ls-removed', path = 'data/water_ls_cayo.xml', global_water_type = 0, deep_ocean_scaler = 0.0
-    },
-
-    -- Other examples
-    -- ['custom_water_2'] = {
-    --     resource_name = 'other_resource_name', path = 'path/to/water.xml', global_water_type = 1, deep_ocean_scaler = 0.0
-    -- },
-
-    -- ['ls_cayo_water'] = {
-    --     resource_name = GetCurrentResourceName(), path = 'data/water_ls_cayo.xml', deep_ocean_scaler = 0.0, global_water_type = 1
-    -- },
-}
+-- if dynamic_water is set to false, these values will only be applied once, when the resource starts, without running the infinite loop.
+-- if dynamic_water is set to true, these have no effect
+config.static_water_type = 0 -- global water type hash, used if dynamic_water is false (0 = default water, 1 = calm sea, 2 = ocean, 3 = swamp, 4 = muddy river, 5 = sewage)
+config.static_waves_scaler = 0.0    -- global wave scaler value, used if dynamic_waves is false (1.0 = default wave intensity, 0.0 = no waves)
 
 config.dynamic_actions_delay = 3000 -- delay in ms for updating path nodes state and wave scaler; 3000 should be perfectly fine
