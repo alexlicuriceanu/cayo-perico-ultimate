@@ -170,6 +170,11 @@ Citizen.CreateThread(function()
                     SetAiGlobalPathNodesType(0)
                     global_ai_path_nodes = 0
                 end
+
+                -- handle waves scaler
+                if config.dynamic_waves and GetDeepOceanScaler() ~= config.dynamic_waves_scaler then
+                    SetDeepOceanScaler(config.dynamic_waves_scaler * 1.0)
+                end
             else
                 -- handle water
                 if GetGlobalWaterType() == 0 then
@@ -180,6 +185,11 @@ Citizen.CreateThread(function()
                 if config.dynamic_path_nodes and global_ai_path_nodes ~= 1 then
                     SetAiGlobalPathNodesType(1)
                     global_ai_path_nodes = 1
+                end
+
+                -- handle waves scaler
+                if config.dynamic_waves and GetDeepOceanScaler() ~= 0.0 then
+                    SetDeepOceanScaler(0.0)
                 end
             end
         end

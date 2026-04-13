@@ -3,11 +3,7 @@ games {'gta5'}
 
 author 'L1CKS'
 description 'Lightweight, powerful and customizable Cayo Perico loader'
-version '1.0.0'
-
-files {
-    'data/*.xml'
-}
+version '1.1.0'
 
 client_scripts {
     "client.lua",

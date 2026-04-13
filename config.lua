@@ -28,7 +28,8 @@ config.dynamic_path_nodes = false   -- true = dynamically enable/disable GPS pat
 
 -- true = dynamically load custom water when entering/exiting Cayo Perico, false = default water on Cayo Perico;
 -- setting dynamic_water to false will not apply the Cayo Perico water textures
-config.dynamic_water = true
+config.dynamic_water = false
+config.dynamic_waves = true   -- true = dynamically change wave intensity when entering/exiting Cayo Perico, false = default wave intensity on and off Cayo Perico
 config.dynamic_waves_scaler = 1.0   -- wave scaler values when the player is not near Cayo Perico, only used if dynamic_waves is true
 
 -- if dynamic_water is set to false, these values will only be applied once, when the resource starts, without running the infinite loop.
