@@ -28,14 +28,14 @@ config.dynamic_path_nodes = true   -- true = dynamically enable/disable GPS path
 
 -- true = dynamically load custom water when entering/exiting Cayo Perico, false = default water on Cayo Perico;
 -- setting dynamic_water to false will not apply the Cayo Perico water textures
-config.dynamic_water = true
+config.dynamic_water = false
 
 config.dynamic_waves = true   -- true = dynamically change wave intensity when entering/exiting Cayo Perico, false = default wave intensity on and off Cayo Perico
 config.dynamic_waves_scaler = 1.0   -- wave scaler values when the player is not near Cayo Perico, only used if dynamic_waves is true
 
 -- if dynamic_water is set to false, these values will only be applied once, when the resource starts, without running the infinite loop.
 -- if dynamic_water is set to true, these have no effect; set dynamic_water to nil to completely ignore water configuration when the resource starts.
-config.static_water_type = 0 -- water type used if dynamic_water is false (0 = default LS water, 1 = Cayo Perico water); setting to 1 will makes water clip in areas of LS
+config.static_water_type = 1 -- water type used if dynamic_water is false (0 = default LS water, 1 = Cayo Perico water); setting to 1 will makes water clip in areas of LS
 config.static_waves_scaler = 0.0    -- global wave scaler value, used if dynamic_waves is false (1.0 = default wave intensity, 0.0 = no waves)
 
 config.dynamic_actions_delay = 3000 -- delay in ms for updating path nodes state and wave scaler; 3000 should be perfectly fine
