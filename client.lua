@@ -147,7 +147,7 @@ Citizen.CreateThread(function()
 
     -- uncomment if you want to set a static value for water type and wave scaler on resource start; 
     --SetDeepOceanScaler(0.0)
-    --SetGlobalWaterType(1)
+    --LoadGlobalWaterType(1)
 
     -- optimization: early exit if loop doesn't need to run
     if not config.dynamic_path_nodes and not config.dynamic_water and not config.dynamic_waves then
