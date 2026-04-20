@@ -44,6 +44,22 @@ local function disable_emitters(_disable)
     SetStaticEmitterEnabled('se_dlc_aw_crowd_interior_lobby', not _disable)
 end
 
+
+local function enable_vault_interior(entity_set)
+    local vault_interior_id = 280065
+
+    if config.vault_entity_set then
+        ActivateInteriorEntitySet(vault_interior_id, entity_set)
+        SetInteriorEntitySetColor(vault_interior_id, entity_set, 1)
+        RefreshInterior(vault_interior_id)
+    else
+        DeactivateInteriorEntitySet(vault_interior_id, 'pearl_necklace_set')
+        DeactivateInteriorEntitySet(vault_interior_id, 'pink_diamond_set')
+        DeactivateInteriorEntitySet(vault_interior_id, 'panther_set')
+        RefreshInterior(vault_interior_id)
+    end
+end
+
 --[[
     Main thread
 ]]
@@ -77,18 +93,7 @@ Citizen.CreateThread(function()
     disable_emitters(config.disable_emitters)
 
     -- vault entity set
-    local vault_interior_id = 280065
-
-    if config.vault_entity_set then
-        ActivateInteriorEntitySet(vault_interior_id, config.vault_entity_set)
-        SetInteriorEntitySetColor(vault_interior_id, config.vault_entity_set, 1)
-        RefreshInterior(vault_interior_id)
-    else
-        DeactivateInteriorEntitySet(vault_interior_id, 'pearl_necklace_set')
-        DeactivateInteriorEntitySet(vault_interior_id, 'pink_diamond_set')
-        DeactivateInteriorEntitySet(vault_interior_id, 'panther_set')
-        RefreshInterior(vault_interior_id)
-    end
+    enable_vault_interior(config.vault_entity_set)
 end)
 
 
