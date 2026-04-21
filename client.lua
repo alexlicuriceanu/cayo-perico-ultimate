@@ -37,11 +37,11 @@ end
 -- enable or disable arena wars emitters based on the provided boolean value
 -- @param: _disable boolean: true to disable emitters, false to enable emitters
 -- @return: nil
-local function disable_emitters(_disable)
-    SetStaticEmitterEnabled('se_dlc_aw_arena_construction_01', not _disable)
-    SetStaticEmitterEnabled('se_dlc_aw_arena_crowd_background_main', not _disable)
-    SetStaticEmitterEnabled('se_dlc_aw_crowd_exterior_lobby', not _disable)
-    SetStaticEmitterEnabled('se_dlc_aw_crowd_interior_lobby', not _disable)
+local function enable_emitters(enable)
+    SetStaticEmitterEnabled('se_dlc_aw_arena_construction_01', enable)
+    SetStaticEmitterEnabled('se_dlc_aw_arena_crowd_background_main', enable)
+    SetStaticEmitterEnabled('se_dlc_aw_crowd_exterior_lobby', enable)
+    SetStaticEmitterEnabled('se_dlc_aw_crowd_interior_lobby', enable)
 end
 
 
@@ -90,7 +90,7 @@ Citizen.CreateThread(function()
     SetAmbientZoneListStatePersistent('AZL_DLC_Hei4_Island_Disabled_Zones', not config.ambient_zone, true)
 
     -- disable arena wars emitters
-    disable_emitters(config.disable_emitters)
+    enable_emitters(not config.disable_emitters)
 
     -- vault entity set
     enable_vault_interior(config.vault_entity_set)
@@ -226,7 +226,7 @@ AddEventHandler('onResourceStop', function(resourceName)
     end
 
     -- enable arena emitters
-    disable_emitters(false)
+    enable_emitters(true)
 
     -- disable ambient sounds
     SetAudioFlag('PlayerOnDLCHeist4Island', false)
