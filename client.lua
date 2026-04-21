@@ -8,6 +8,7 @@ local global_ai_path_nodes = nil    -- to keep track of the current state of the
 
 -- thread control variables
 local minimap_thread_active = false
+local misc_thread_active = false
 
 
 
@@ -148,7 +149,7 @@ local function enable_cayo_perico_minimap(enable)
     -- make blip invisible
     SetBlipAlpha(dummy_blip, 0)
 
-    -- signal the tread to start
+    -- signal the thread to start
     minimap_thread_active = true
 
     Citizen.CreateThread(function()
@@ -163,6 +164,96 @@ local function enable_cayo_perico_minimap(enable)
     end)
 end
 
+-- enables/disables various misc features on Cayo Perico based on the config settings, such as dynamic path nodes, dynamic water, and dynamic waves
+-- @param enable boolean: true to enable Cayo Perico misc features, false to disable Cayo Perico misc features
+-- @return nil
+local function enable_cayo_perico_misc(enable)
+    -- signal any misc thread to stop
+    misc_thread_active = false
+    
+    -- reset path nodes to default state
+    if global_ai_path_nodes ~= 0 then
+        SetAiGlobalPathNodesType(0)
+        global_ai_path_nodes = 0
+    end
+
+    -- reset water to default state
+    if GetGlobalWaterType() == 1 then
+        load_water(0, config.dynamic_waves_scaler, nil, nil)
+    end
+
+    -- reset waves scaler to default state
+    if GetDeepOceanScaler() ~= config.dynamic_waves_scaler then
+        SetDeepOceanScaler(config.dynamic_waves_scaler * 1.0)
+    end
+
+    -- turning off, exit early
+    if not enable then
+        return
+    end
+
+    -- optimization: early exit if all dynamic features are disabled in the config
+    if not config.dynamic_path_nodes and not config.dynamic_water and not config.dynamic_waves then
+        return
+    end
+
+    -- signal the thread to start
+    misc_thread_active = true
+
+    Citizen.CreateThread(function()
+        while not NetworkIsSessionStarted() do
+            Citizen.Wait(0)
+        end
+
+        while misc_thread_active do
+            local ped = PlayerPedId()
+
+            if DoesEntityExist(ped) and not IsEntityDead(ped) then
+                local coords = GetEntityCoords(ped)
+                local distance = #(coords - cayo_perico_coords)
+
+                -- in Los Santos 
+                if distance > cayo_perico_radius then
+                    -- handle water
+                    if config.dynamic_water and GetGlobalWaterType() == 1 then
+                        load_water(0, config.dynamic_waves_scaler, nil, nil)
+                    end
+
+                    -- handle path nodes
+                    if config.dynamic_path_nodes and global_ai_path_nodes ~= 0 then
+                        SetAiGlobalPathNodesType(0)
+                        global_ai_path_nodes = 0
+                    end
+
+                    -- handle waves scaler
+                    if config.dynamic_waves and GetDeepOceanScaler() ~= config.dynamic_waves_scaler then
+                        SetDeepOceanScaler(config.dynamic_waves_scaler * 1.0)
+                    end
+
+                -- in Cayo Perico
+                else
+                    -- handle water
+                    if config.dynamic_water and GetGlobalWaterType() == 0 then
+                        load_water(1, 0.0, nil, nil)
+                    end
+
+                    -- handle path nodes
+                    if config.dynamic_path_nodes and global_ai_path_nodes ~= 1 then
+                        SetAiGlobalPathNodesType(1)
+                        global_ai_path_nodes = 1
+                    end
+
+                    -- handle waves scaler
+                    if config.dynamic_waves and GetDeepOceanScaler() ~= 0.0 then
+                        SetDeepOceanScaler(0.0)
+                    end
+                end
+            end
+            
+            Citizen.Wait(config.dynamic_actions_delay)
+        end
+    end)
+end
 
 -- driver thread
 Citizen.CreateThread(function()
@@ -172,97 +263,18 @@ Citizen.CreateThread(function()
 
     enable_cayo_perico(true)
     enable_cayo_perico_minimap(true)
+    enable_cayo_perico_misc(true)
 end)
 
 
---[[
-    Water thread
-]]
-Citizen.CreateThread(function()
-    while not NetworkIsSessionStarted() do
-        Citizen.Wait(0)
-    end
 
-    -- handle path nodes on resource start
-    if not config.dynamic_path_nodes then
-        SetAiGlobalPathNodesType(0)
-        global_ai_path_nodes = 0
-    end
-
-    -- uncomment if you want to set a static value for water type and wave scaler on resource start; 
-    --SetDeepOceanScaler(0.0)
-    --LoadGlobalWaterType(1)
-
-    -- optimization: early exit if loop doesn't need to run
-    if not config.dynamic_path_nodes and not config.dynamic_water and not config.dynamic_waves then
-        return
-    end
-
-    while true do
-        local ped = PlayerPedId()
-
-        if DoesEntityExist(ped) and not IsEntityDead(ped) then
-            local coords = GetEntityCoords(ped)
-            local distance = #(coords - cayo_perico_coords)
-
-            if distance > cayo_perico_radius then
-                -- handle water
-                if config.dynamic_water and GetGlobalWaterType() == 1 then
-                    load_water(0, config.dynamic_waves_scaler, nil, nil)
-                end
-
-                -- handle path nodes
-                if config.dynamic_path_nodes and global_ai_path_nodes ~= 0 then
-                    SetAiGlobalPathNodesType(0)
-                    global_ai_path_nodes = 0
-                end
-
-                -- handle waves scaler
-                if config.dynamic_waves and GetDeepOceanScaler() ~= config.dynamic_waves_scaler then
-                    SetDeepOceanScaler(config.dynamic_waves_scaler * 1.0)
-                end
-            else
-                -- handle water
-                if config.dynamic_water and GetGlobalWaterType() == 0 then
-                    load_water(1, 0.0, nil, nil)
-                end
-
-                -- handle path nodes
-                if config.dynamic_path_nodes and global_ai_path_nodes ~= 1 then
-                    SetAiGlobalPathNodesType(1)
-                    global_ai_path_nodes = 1
-                end
-
-                -- handle waves scaler
-                if config.dynamic_waves and GetDeepOceanScaler() ~= 0.0 then
-                    SetDeepOceanScaler(0.0)
-                end
-            end
-        end
-        
-        Citizen.Wait(config.dynamic_actions_delay)
-    end
-end)
 
 AddEventHandler('onResourceStop', function(resourceName)
     if GetCurrentResourceName() ~= resourceName then
        return
     end
 
-    -- reset minimap
-    SetUseIslandMap(false)
-
-    -- remove the dummy blip
-    if dummy_blip then
-        RemoveBlip(dummy_blip)
-    end
-
     enable_cayo_perico(false)
-
-    -- reset path nodes
-    SetAiGlobalPathNodesType(0)
-    global_ai_path_nodes = 0
-
-    -- reset water
-    load_water(0, 1.0, nil, nil)
+    enable_cayo_perico_minimap(false)
+    enable_cayo_perico_misc(false)
 end)
