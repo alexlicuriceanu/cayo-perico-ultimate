@@ -6,6 +6,8 @@ local dummy_blip_coords = vector3(5721.93, -6051.38, 0.0)   -- dummy blip coordi
 
 local global_ai_path_nodes = nil    -- to keep track of the current state of the global path nodes, since no "get" function exists for it
 
+local is_cayo_perico_enabled = true    -- to keep track of whether Cayo Perico is currently enabled or not
+
 -- loads the specified IPL subset if enable is true, otherwise unloads it
 -- @param: ipl_subset string: the key of the IPL subset in the _cayo_ipls table
 -- @param: enable boolean: whether to load or unload the IPL subset
@@ -34,6 +36,17 @@ local function load_cayo_perico_water()
     SetDeepOceanScaler(0.0)
 end
 
+local function load_water(water_type, waves_scaler, resource_name, water_path)
+    LoadGlobalWaterType(water_type)
+    SetDeepOceanScaler(waves_scaler * 1.0)
+
+    if resource_name and water_path then
+            
+    
+    end
+end
+
+
 -- enable or disable arena wars emitters based on the provided boolean value
 -- @param: _disable boolean: true to disable emitters, false to enable emitters
 -- @return: nil
@@ -48,7 +61,7 @@ end
 local function enable_vault_interior(entity_set)
     local vault_interior_id = 280065
 
-    if config.vault_entity_set then
+    if entity_set then
         ActivateInteriorEntitySet(vault_interior_id, entity_set)
         SetInteriorEntitySetColor(vault_interior_id, entity_set, 1)
         RefreshInterior(vault_interior_id)
@@ -60,6 +73,45 @@ local function enable_vault_interior(entity_set)
     end
 end
 
+
+local function enable_cayo_perico(enable)
+    -- IPLs
+    enable_ipl_subset('main', enable)
+
+    enable_ipl_subset('shark', enable and config.shark)
+    enable_ipl_subset('whale', enable and config.whale)
+    enable_ipl_subset('sea_mines', enable and config.sea_mines)
+    enable_ipl_subset('drug_plants', enable and config.drug_plants)
+
+    enable_ipl_subset('gate_open', enable and config.gate_open)
+    enable_ipl_subset('gate_closed', enable and not config.gate_open)
+
+    enable_ipl_subset('hangar_open', enable and config.hangar_open)
+    enable_ipl_subset('hangar_closed', enable and not config.hangar_open)
+
+    -- snow from North Yankton
+    SetZoneEnabled(GetZoneFromNameId("PrLog"), not enable or not config.disable_prologue_snow)
+
+    -- peds on the island
+    SetScenarioGroupEnabled('Heist_Island_Peds', enable and config.peds)
+
+    -- car radio
+    SetAudioFlag('PlayerOnDLCHeist4Island', enable and config.disable_radio)
+
+    -- ambient zones
+    SetAmbientZoneListStatePersistent('AZL_DLC_Hei4_Island_Zones', enable and config.ambient_zone, true)
+    SetAmbientZoneListStatePersistent('AZL_DLC_Hei4_Island_Disabled_Zones', not enable or not config.ambient_zone, true)
+
+    -- emitters
+    enable_emitters(enable and not config.disable_emitters)
+
+    -- vault interior
+    enable_vault_interior(enable and config.vault_entity_set or nil)
+
+    is_cayo_perico_enabled = enable
+end
+
+
 --[[
     Main thread
 ]]
@@ -68,32 +120,7 @@ Citizen.CreateThread(function()
         Citizen.Wait(0)
     end
 
-    -- load cayo perico ipls
-    enable_ipl_subset('main', true)
-    enable_ipl_subset('shark', config.shark)
-    enable_ipl_subset('whale', config.whale)
-    enable_ipl_subset('sea_mines', config.sea_mines)
-    enable_ipl_subset('gate_open', config.gate_open)
-    enable_ipl_subset('gate_closed', config.gate_open == false)
-    enable_ipl_subset('hangar_open', config.hangar_open)
-    enable_ipl_subset('hangar_closed', config.hangar_open == false)
-    enable_ipl_subset('drug_plants', config.drug_plants)
-
-    -- disable snow from North Yankton
-    SetZoneEnabled(GetZoneFromNameId("PrLog"), not config.disable_prologue_snow)
-    -- enable/disable peds on the island
-    SetScenarioGroupEnabled('Heist_Island_Peds', config.peds)
-
-    -- enable ambient sounds
-    SetAudioFlag('PlayerOnDLCHeist4Island', config.disable_radio)
-    SetAmbientZoneListStatePersistent('AZL_DLC_Hei4_Island_Zones', config.ambient_zone, true)
-    SetAmbientZoneListStatePersistent('AZL_DLC_Hei4_Island_Disabled_Zones', not config.ambient_zone, true)
-
-    -- disable arena wars emitters
-    enable_emitters(not config.disable_emitters)
-
-    -- vault entity set
-    enable_vault_interior(config.vault_entity_set)
+    enable_cayo_perico(true)
 end)
 
 
@@ -218,20 +245,7 @@ AddEventHandler('onResourceStop', function(resourceName)
         RemoveBlip(dummy_blip)
     end
 
-    -- unload all IPLs
-    local _keys = get_keys(_cayo_ipls)
-
-    for _, ipl_subset in pairs(_keys) do
-        enable_ipl_subset(ipl_subset, false)
-    end
-
-    -- enable arena emitters
-    enable_emitters(true)
-
-    -- disable ambient sounds
-    SetAudioFlag('PlayerOnDLCHeist4Island', false)
-    SetAmbientZoneListStatePersistent('AZL_DLC_Hei4_Island_Zones', false, true)
-    SetAmbientZoneListStatePersistent('AZL_DLC_Hei4_Island_Disabled_Zones', true, true)
+    enable_cayo_perico(false)
 
     -- reset path nodes
     SetAiGlobalPathNodesType(0)
