@@ -266,9 +266,6 @@ Citizen.CreateThread(function()
     enable_cayo_perico_misc(true)
 end)
 
-
-
-
 AddEventHandler('onResourceStop', function(resourceName)
     if GetCurrentResourceName() ~= resourceName then
        return
@@ -278,3 +275,8 @@ AddEventHandler('onResourceStop', function(resourceName)
     enable_cayo_perico_minimap(false)
     enable_cayo_perico_misc(false)
 end)
+
+-- exports
+exports("enable_cayo_perico", enable_cayo_perico)
+exports("enable_cayo_perico_minimap", enable_cayo_perico_minimap)
+exports("enable_cayo_perico_misc", enable_cayo_perico_misc)
