@@ -1,4 +1,4 @@
-_cayo_ipls = {
+CAYO_IPLS = {
     ['main'] = {
         'h4_aa_guns',
         'h4_aa_guns_lod',

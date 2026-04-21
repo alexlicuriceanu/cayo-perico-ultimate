@@ -6,14 +6,17 @@ local dummy_blip_coords = vector3(5721.93, -6051.38, 0.0)   -- dummy blip coordi
 
 local global_ai_path_nodes = nil    -- to keep track of the current state of the global path nodes, since no "get" function exists for it
 
-local is_cayo_perico_enabled = true    -- to keep track of whether Cayo Perico is currently enabled or not
+-- thread control variables
+local minimap_thread_active = false
+
+
 
 -- loads the specified IPL subset if enable is true, otherwise unloads it
--- @param: ipl_subset string: the key of the IPL subset in the _cayo_ipls table
+-- @param: ipl_subset string: the key of the IPL subset in the CAYO_IPLS table
 -- @param: enable boolean: whether to load or unload the IPL subset
 -- @return: nil
 local function enable_ipl_subset(ipl_subset, enable)
-    for _, ipl in pairs(_cayo_ipls[ipl_subset]) do
+    for _, ipl in pairs(CAYO_IPLS[ipl_subset]) do
         if enable then
             RequestIpl(ipl)
         else
@@ -22,33 +25,25 @@ local function enable_ipl_subset(ipl_subset, enable)
     end
 end
 
--- loads water configuration when not in Cayo Perico
---@return: nil
-local function load_ls_water()
-    LoadGlobalWaterType(0)
-    SetDeepOceanScaler(config.dynamic_waves_scaler * 1.0)
-end
 
--- loads water configuration when in Cayo Perico
+-- loads the specified water type and wave scaler, and applies custom water file if specified
+-- @param: water_type integer: the water type to load, corresponds to the water types in the game files
+-- @param: waves_scaler float: the wave scaler to set, where 1.0 is the default wave intensity
+-- @param [optional]: resource_name string: the name of the resource containing the custom water file
+-- @param [optional]: water_path string: the path to the custom water file within the resource, including the file extension
 -- @return: nil
-local function load_cayo_perico_water()
-    LoadGlobalWaterType(1)
-    SetDeepOceanScaler(0.0)
-end
-
 local function load_water(water_type, waves_scaler, resource_name, water_path)
     LoadGlobalWaterType(water_type)
     SetDeepOceanScaler(waves_scaler * 1.0)
 
     if resource_name and water_path then
-            
-    
+        LoadWaterFromPath(resource_name, water_path)
     end
 end
 
 
 -- enable or disable arena wars emitters based on the provided boolean value
--- @param: _disable boolean: true to disable emitters, false to enable emitters
+-- @param: enable boolean: true to enable emitters, false to disable emitters
 -- @return: nil
 local function enable_emitters(enable)
     SetStaticEmitterEnabled('se_dlc_aw_arena_construction_01', enable)
@@ -58,6 +53,9 @@ local function enable_emitters(enable)
 end
 
 
+-- enable or disable the specified vault interior entity set, or disable if entity_set is nil
+-- @param: entity_set string: the name of the entity set to enable
+-- @return: nil
 local function enable_vault_interior(entity_set)
     local vault_interior_id = 280065
 
@@ -73,7 +71,9 @@ local function enable_vault_interior(entity_set)
     end
 end
 
-
+-- enables Cayo Perico IPLs, peds, and other misc stuff
+-- @param: enable boolean: true to enable Cayo Perico, false to disable Cayo Perico
+-- @return: nil
 local function enable_cayo_perico(enable)
     -- IPLs
     enable_ipl_subset('main', enable)
@@ -107,61 +107,73 @@ local function enable_cayo_perico(enable)
 
     -- vault interior
     enable_vault_interior(enable and config.vault_entity_set or nil)
+end
 
-    is_cayo_perico_enabled = enable
+-- enables/disables the Cayo Perico minimap based on the config settings
+-- @param enable boolean: true to enable Cayo Perico minimap, false to disable Cayo Perico minimap
+-- @return nil
+local function enable_cayo_perico_minimap(enable)
+    -- signal any minimap threads to stop
+    minimap_thread_active = false
+
+    -- reset minimap to default state
+    SetUseIslandMap(false)
+    
+    -- remove the dummy blip if it exists
+    if dummy_blip then
+        RemoveBlip(dummy_blip)
+        dummy_blip = nil
+    end
+
+    -- early exit if toggle boolean is disabled
+    if not enable then
+        return
+    end
+
+    -- no minimap
+    if config.minimap_type == 'off' then
+        return
+    end
+
+    -- compact minimap; GTAO Cayo Perico minimap
+    if config.minimap_type == 'compact' then
+        SetUseIslandMap(true)
+        return
+    end
+
+    -- create a dummy blip to extend the minimap bounds to include the entire island
+    local blip_x, blip_y, blip_z = table.unpack(dummy_blip_coords)
+    dummy_blip = AddBlipForCoord(blip_x, blip_y, blip_z)
+    
+    -- make blip invisible
+    SetBlipAlpha(dummy_blip, 0)
+
+    -- signal the tread to start
+    minimap_thread_active = true
+
+    Citizen.CreateThread(function()
+        local hash = GetHashKey("h4_fake_islandx")
+        local x, y, z = table.unpack(cayo_perico_coords)
+        
+        while minimap_thread_active do
+            SetRadarAsExteriorThisFrame()
+            SetRadarAsInteriorThisFrame(hash, x, y, z, 0)
+            Citizen.Wait(0)
+        end
+    end)
 end
 
 
---[[
-    Main thread
-]]
+-- driver thread
 Citizen.CreateThread(function()
     while not NetworkIsSessionStarted() do
         Citizen.Wait(0)
     end
 
     enable_cayo_perico(true)
+    enable_cayo_perico_minimap(true)
 end)
 
-
---[[
-    Minimap thread
-]]
-Citizen.CreateThread(function()
-    SetUseIslandMap(false)
-
-    -- don't load anything, exit early
-    if config.minimap_type == 'off' then
-       return
-    end
-
-    -- load compact minimap via native calls, then exit
-    if config.minimap_type == 'compact' then
-        SetUseIslandMap(true)
-        return
-    end
-
-    -- load minimap via scaleform calls
-    -- set up the dummy blip to extend minimap bounds
-    if dummy_blip then
-        RemoveBlip(dummy_blip)
-    end
-    
-    local blip_x, blip_y, blip_z = table.unpack(dummy_blip_coords)
-    dummy_blip = AddBlipForCoord(blip_x, blip_y, blip_z)
-
-    -- make blip invisible
-    SetBlipAlpha(dummy_blip, 0)
-
-    local hash = GetHashKey("h4_fake_islandx")
-    local x, y, z = table.unpack(cayo_perico_coords)
-    
-    while true do
-        SetRadarAsExteriorThisFrame()
-        SetRadarAsInteriorThisFrame(hash, x, y, z, 0)
-        Citizen.Wait(0)
-    end
-end)
 
 --[[
     Water thread
@@ -196,7 +208,7 @@ Citizen.CreateThread(function()
             if distance > cayo_perico_radius then
                 -- handle water
                 if config.dynamic_water and GetGlobalWaterType() == 1 then
-                    load_ls_water()
+                    load_water(0, config.dynamic_waves_scaler, nil, nil)
                 end
 
                 -- handle path nodes
@@ -212,7 +224,7 @@ Citizen.CreateThread(function()
             else
                 -- handle water
                 if config.dynamic_water and GetGlobalWaterType() == 0 then
-                    load_cayo_perico_water()
+                    load_water(1, 0.0, nil, nil)
                 end
 
                 -- handle path nodes
@@ -250,4 +262,7 @@ AddEventHandler('onResourceStop', function(resourceName)
     -- reset path nodes
     SetAiGlobalPathNodesType(0)
     global_ai_path_nodes = 0
+
+    -- reset water
+    load_water(0, 1.0, nil, nil)
 end)

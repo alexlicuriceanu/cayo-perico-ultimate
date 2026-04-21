@@ -23,7 +23,7 @@ config.drug_plants = false      -- true = enable drug plants, false = disable dr
     It has much better performance, and has better and easier customizability options.
     https://forum.cfx.re/t/release-extra-map-tiles-v2-add-extra-textured-tiles-on-the-pause-menu-map-and-minimap-new-and-revamped-version
 ]]
-config.minimap_type = 'off' -- options: 'compact', 'scaleform', 'off'
+config.minimap_type = 'scaleform' -- options: 'compact', 'scaleform', 'off'
 config.dynamic_path_nodes = true   -- true = dynamically enable/disable GPS path nodes when entering/exiting Cayo Perico, false = no GPS path nodes on Cayo Perico
 
 -- true = dynamically load custom water when entering/exiting Cayo Perico, false = default water on Cayo Perico;
