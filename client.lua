@@ -187,6 +187,10 @@ local function enable_cayo_perico_misc(enable)
         SetDeepOceanScaler(config.dynamic_waves_scaler * 1.0)
     end
 
+    -- uncomment if you want to set a static value for water type and wave scaler on resource start;
+    --SetDeepOceanScaler(0.0)
+    --LoadGlobalWaterType(1)
+
     -- turning off, exit early
     if not enable then
         return
